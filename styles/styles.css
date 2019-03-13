@@ -683,4 +683,45 @@ main {
   text-transform: uppercase;
   text-shadow: 2px 2px 0 #abdadc;
 }
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.contact form label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.contact form input:not([type='submit']) {
+  width: 50%;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 5px;
+  border: none;
+  border-bottom: 3px solid #1c3557;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.contact form textarea {
+  resize: none;
+  width: 75%;
+  height: 150px;
+  max-width: 450px;
+  min-width: 250px;
+  padding: 15px;
+  border: 3px solid #1c3557;
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+}
 /*# sourceMappingURL=styles.css.map */
