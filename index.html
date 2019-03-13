@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Luke MacKenzie</title>
+    <title>Luke MacKenzie | Web Developer</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -17,14 +17,16 @@
                 <div class="landingTextBox">
                     <p>Hey, I'm Luke</p>
                     <p>I'm a Toronto-based Web Developer</p>
-                    <p>Thanks for stopping by</p>
+                    <p>Thanks for stopping by!</p>
                     <a href="#about" class="button">Tell Me More</a>
                 </div>
             </div>
-            <div class="landingSocials">
+            <div class="socials">
                 <i class="fab fa-github"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-instagram"></i>
+                <i class="fab fa-codepen"></i>
+                <i class="fas fa-envelope"></i>
             </div>
             <a href="#portfolio">
                 <i class="fas fa-arrow-circle-down"></i>
@@ -106,19 +108,30 @@
     <article class="contactArticle">
         <section class="contact wrapper">
             <h2><span class="whiteText">Con</span>tact</h2>
-            <form action="">
+            <form method="POST" action="http://www.focuspocus.io/magic/59cdba1eaf314d39b71e2e3c6a62a5c6">
                 <label for="" id="name">Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name">
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email">
                 <label for="message">Message</label>
-                <textarea id="message"></textarea>
-                <input type="submit" class="button" value="Submit">
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Submit">
             </form>
+            <div class="socials">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-codepen"></i>
+                <i class="far fa-envelope"></i>
+            </div>
         </section>
     </article>
+    <footer>
+        <p class="wrapper">Luke MacKenzie <i class="fab fa-canadian-maple-leaf"></i> 2019</p>
+    </footer>
 
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

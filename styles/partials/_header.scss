@@ -25,6 +25,24 @@ header {
         margin: 0 0 2rem .7rem;
         text-transform: uppercase;
     }
+    .socials {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        i {
+            display: block;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            transition: all .3s ease;
+            &:hover,
+            &:active {
+                transform: scale(1.2);
+                color: $secondaryColour2;
+            }
+        }
+    }
 }
 
 .landingTextBorder {
@@ -59,29 +77,11 @@ header {
     border: 5px solid $accentColour;
 }
 
-.landingSocials {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    i {
-        display: block;
-        margin: 20px 0;
-        font-size: 1.2rem;
-        transition: all .3s ease;
-        &:hover,
-        &:active {
-            transform: scale(1.2);
-            color: $secondaryColour2;
-        }
-    }
-}
-
 .fa-arrow-circle-down {
     font-size: 2rem;
     position: relative;
     top: 20px;
-    animation: arrowDown 1s ease-out infinite;
+    animation: arrowDown 1s cubic-bezier(.23,1,.32,1) infinite;
     transition: color .2s linear;
     &:hover {
         animation-play-state: paused;

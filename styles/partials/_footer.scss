@@ -1,0 +1,13 @@
+footer {
+    background: $baseColour;
+    text-align: center;
+    p {
+        color: lightgrey;
+        line-height: normal;
+        font-size: .8rem;
+    }
+    i {
+        margin: 10px 3px;
+        color: $secondaryColour2;
+    }
+}

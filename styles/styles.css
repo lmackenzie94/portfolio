@@ -205,6 +205,7 @@ body {
 .wrapper {
   max-width: 1100px;
   padding: 0 40px;
+  margin: 0 auto;
 }
 
 h1, h2, p, section, ul, li {
@@ -240,7 +241,7 @@ p {
   display: inline-block;
   text-decoration: none;
   font-size: .8rem;
-  border: 3px solid #e63947;
+  border: 2px solid #e63947;
   padding: 8px 2px;
   margin: 5px;
   position: relative;
@@ -330,6 +331,29 @@ header {
   text-transform: uppercase;
 }
 
+.landing .socials {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+
+.landing .socials i {
+  display: block;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.landing .socials i:hover, .landing .socials i:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #e63947;
+}
+
 .landingTextBorder {
   border: 5px solid #1c3557;
   background: transparent;
@@ -371,34 +395,12 @@ header {
   border: 5px solid #abdadc;
 }
 
-.landingSocials {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.landingSocials i {
-  display: block;
-  margin: 20px 0;
-  font-size: 1.2rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.landingSocials i:hover, .landingSocials i:active {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: #e63947;
-}
-
 .fa-arrow-circle-down {
   font-size: 2rem;
   position: relative;
   top: 20px;
-  -webkit-animation: arrowDown 1s ease-out infinite;
-          animation: arrowDown 1s ease-out infinite;
+  -webkit-animation: arrowDown 1s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+          animation: arrowDown 1s cubic-bezier(0.23, 1, 0.32, 1) infinite;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
 }
@@ -459,7 +461,7 @@ header {
 }
 
 .about {
-  height: 60vh;
+  min-height: 60vh;
   border: 7px solid #abdadc;
   width: 90vw;
   display: -webkit-box;
@@ -662,7 +664,7 @@ main {
 }
 
 .contact {
-  height: 75vh;
+  min-height: 75vh;
   border: 7px solid #1c3557;
   width: 90vw;
   display: -webkit-box;
@@ -676,6 +678,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 35px 0;
+  position: relative;
 }
 
 .contact h2 {
@@ -701,16 +704,62 @@ main {
 .contact form label {
   margin-top: 20px;
   margin-bottom: 5px;
+  width: 75%;
+  max-width: 350px;
+  min-width: 200px;
+  color: #f2f8ee;
+}
+
+.contact form label:nth-of-type(3) {
+  width: 75%;
+  max-width: 450px;
+  min-width: 250px;
 }
 
 .contact form input:not([type='submit']) {
-  width: 50%;
-  max-width: 300px;
+  width: 75%;
+  max-width: 350px;
   min-width: 200px;
   padding: 5px;
   border: none;
   border-bottom: 3px solid #1c3557;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
+  color: #1c3557;
+}
+
+.contact form input:not([type='submit']):focus {
+  background: #abdadc;
+}
+
+.contact form input[type='submit'] {
+  display: inline-block;
+  text-decoration: none;
+  font-size: .8rem;
+  border: 2px solid #1c3557;
+  padding: 8px 2px;
+  margin: 5px;
+  position: relative;
+  color: #1c3557;
+  text-align: center;
+  z-index: 0;
+  width: 180px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  text-transform: uppercase;
+  background: #f2f8ee;
+}
+
+.contact form input[type='submit']:hover,
+.contact form input[type='submit']:focus {
+  -webkit-box-shadow: 3px 3px 0 #abdadc;
+          box-shadow: 3px 3px 0 #abdadc;
+}
+
+.contact form input[type='submit']:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .contact form textarea {
@@ -721,7 +770,50 @@ main {
   min-width: 250px;
   padding: 15px;
   border: 3px solid #1c3557;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6);
   margin-bottom: 5px;
+  color: #1c3557;
+}
+
+.contact form textarea:focus {
+  background: #abdadc;
+}
+
+.contact .socials {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact .socials i {
+  display: block;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.contact .socials i:hover, .contact .socials i:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #e63947;
+}
+
+footer {
+  background: #1c3557;
+  text-align: center;
+}
+
+footer p {
+  color: lightgrey;
+  line-height: normal;
+  font-size: .8rem;
+}
+
+footer i {
+  margin: 10px 3px;
+  color: #e63947;
 }
 /*# sourceMappingURL=styles.css.map */

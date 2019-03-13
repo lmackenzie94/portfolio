@@ -6,13 +6,14 @@
 }
 
 .contact {
-    height: 75vh;
+    min-height: 75vh;
     border: 7px solid $baseColour;
     width: 90vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 35px 0;
+    position: relative;
     h2 {
         margin: 1.5rem 0 0 1.5rem;
         text-transform: uppercase;
@@ -25,17 +26,58 @@
         width: 100%;
         label {
             margin-top: 20px;
-            margin-bottom: 5px;            
+            margin-bottom: 5px; 
+            width: 75%;
+            max-width: 350px;
+            min-width: 200px;
+            color: $secondaryColour1;
+            &:nth-of-type(3) {
+                width: 75%;
+                max-width: 450px;
+                min-width: 250px;
+            }       
         }
         input:not([type='submit']) {
-            width: 50%;
-            max-width: 300px;
+            width: 75%;
+            max-width: 350px;
             min-width: 200px;
             padding: 5px;
             border: none;
             border-bottom: 3px solid $baseColour;
-            background: rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.5);
+            color: $baseColour;
+            &:focus {
+                background: $accentColour;
+            }
         }
+
+        input[type='submit'] {
+            display: inline-block;
+            text-decoration: none;
+            font-size: .8rem;
+            border: 2px solid $baseColour;
+            padding: 8px 2px;
+            margin: 5px;
+            position: relative;
+            color: $baseColour;
+            text-align: center;
+            z-index: 0;
+            width: 180px;
+            transition: all .2s ease-out;
+            text-transform: uppercase;
+            background: $secondaryColour1;
+        }
+
+        input[type='submit']:hover,
+        input[type='submit']:focus {
+            box-shadow: 3px 3px 0 $accentColour;
+        }
+
+        input[type='submit']:active {
+            box-shadow: none;
+            transform: scale(.95);
+        }
+
         textarea {
             resize: none;
             width: 75%;
@@ -44,8 +86,29 @@
             min-width: 250px;
             padding: 15px;
             border: 3px solid $baseColour;
-            background: rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.6);
             margin-bottom: 5px;
+            color: $baseColour;
+            &:focus {
+                background: $accentColour;
+            }
+        }
+    }
+    .socials {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        i {
+            display: block;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            transition: all .3s ease;
+            &:hover,
+            &:active {
+                transform: scale(1.2);
+                color: $secondaryColour2;
+            }
         }
     }
 }
