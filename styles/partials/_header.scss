@@ -43,7 +43,7 @@ header {
         border-radius: 50%;
         top: -50px;
         left: -50px;
-        background: $accentColour;  
+        background: $accentColour;
     }
 }
 
@@ -52,17 +52,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     min-height: 100%;
     width: 100%;
     padding: 2% 10% 2% 10%;
     border: 5px solid $accentColour;
-    a {
-        text-align: right;
-        display: inline-block;
-        text-transform: uppercase;
-        color: $secondaryColour2;
-        font-size: .7rem;
-    }
 }
 
 .landingSocials {
@@ -78,6 +72,7 @@ header {
         &:hover,
         &:active {
             transform: scale(1.2);
+            color: $secondaryColour2;
         }
     }
 }
@@ -94,15 +89,10 @@ header {
     }
 }
 
-.aboutMe {
-    display: inline-block;
-    font-size: .8rem;
-    text-transform: uppercase;
-    color: $secondaryColour2;
+@keyframes arrowDown {
+    0% {top: 20px; transform: scale(.8);}
+    50% {top: 35px; transform: scale(1);}
+    100% {top: 20px; transform: scale(.8);}
 }
 
-@keyframes arrowDown {
-    0% {top: 20px}
-    50% {top: 35px}
-    100% {top: 20px}
-}
+

@@ -1,21 +1,21 @@
-.aboutArticle {
-    background:#f2f8ee;
+.contactArticle {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, $secondaryColour2 0%, $secondaryColour2 50%, $secondaryColour1 50%, $secondaryColour1 100%);
 }
 
-.about {
-    height: 60vh;
-    border: 7px solid #abdadc;
+.contact {
+    height: 75vh;
+    border: 7px solid $baseColour;
     width: 90vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 35px 0;
     h2 {
+        margin: 1.5rem 0 0 1.5rem;
         text-transform: uppercase;
         text-shadow: 2px 2px 0 $accentColour;
-        margin: 1.5rem 0;
     }
 }

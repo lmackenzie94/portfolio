@@ -59,5 +59,45 @@ p {
 
 // span to change colour of certain letters in text
 .whiteText {
-  color: #f2f8ee;
+  color: $secondaryColour1;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: .8rem;
+    border: 3px solid $secondaryColour2;
+    padding: 8px 2px;
+    margin: 5px;
+    position: relative;
+    color: $baseColour;
+    text-align: center;
+    z-index: 0;
+    width: 180px;
+    transition: all .3s ease-out;
+    text-transform: uppercase;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $secondaryColour2;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.button:hover {
+    color: $secondaryColour1;
+}
+
+.button:hover:before {
+    transform: scaleY(1);
 }
