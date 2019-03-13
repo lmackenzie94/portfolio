@@ -1,0 +1,108 @@
+header {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, $secondaryColour2 0%, $secondaryColour2 50%, $secondaryColour1 50%, $secondaryColour1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing {
+    border: 7px solid $baseColour;
+    width: 90vw;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    h1 {
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        margin: 3rem 0 0 1rem;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 0 $accentColour;
+    }
+    h2 {
+        margin: 0 0 2rem .7rem;
+        text-transform: uppercase;
+    }
+}
+
+.landingTextBorder {
+    border: 5px solid $baseColour;
+    background: transparent;
+    margin-top: 10px;
+    position: relative;
+    min-height: 250px;
+    width: 500px;
+    padding: 1%;
+    &:after {
+        content: '';
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        top: -50px;
+        left: -50px;
+        background: $accentColour;  
+    }
+}
+
+.landingTextBox {
+    background: $secondaryColour1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100%;
+    width: 100%;
+    padding: 2% 10% 2% 10%;
+    border: 5px solid $accentColour;
+    a {
+        text-align: right;
+        display: inline-block;
+        text-transform: uppercase;
+        color: $secondaryColour2;
+        font-size: .7rem;
+    }
+}
+
+.landingSocials {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    i {
+        display: block;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        transition: all .3s ease;
+        &:hover,
+        &:active {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.fa-arrow-circle-down {
+    font-size: 2rem;
+    position: relative;
+    top: 20px;
+    animation: arrowDown 1s ease-out infinite;
+    transition: color .2s linear;
+    &:hover {
+        animation-play-state: paused;
+        color: $accentColour;
+    }
+}
+
+.aboutMe {
+    display: inline-block;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: $secondaryColour2;
+}
+
+@keyframes arrowDown {
+    0% {top: 20px}
+    50% {top: 35px}
+    100% {top: 20px}
+}
