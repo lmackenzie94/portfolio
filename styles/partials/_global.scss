@@ -19,6 +19,7 @@ $accentColour: #abdadc;
 
 html {
     font-size: 125%;
+    overflow-x: hidden; //to prevent vertical scroll from animations
 }
 
 body {

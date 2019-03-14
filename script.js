@@ -1,6 +1,6 @@
 $(function () {
 
-    $('.landingTextBox .button').delay(7000).fadeIn();
+    $('.landingTextBox .button, .fa-arrow-circle-down').delay(9000).show(0); 
 
     $('.hamburger').on('click', function () {
         $('.hamburger').toggleClass('active'),
@@ -14,7 +14,6 @@ $(function () {
         speed: 600
     });
 
-   
 
 });
 
@@ -24,19 +23,19 @@ var typed = new Typed('#p1', {
         "Hey, I'm Luke"
     ],
     typeSpeed: 40,
-    startDelay: 1000
+    startDelay: 3000
 });
 var typed = new Typed('#p2', {
     strings: [
         "I'm a Toronto-based Web Developer"
     ],
     typeSpeed: 40,
-    startDelay: 2500
+    startDelay: 4500
 });
 var typed = new Typed('#p3', {
     strings: [
         "Thanks for stopping by!"
     ],
     typeSpeed: 40,
-    startDelay: 5000
+    startDelay: 7000
 });

@@ -14,15 +14,16 @@ header {
     align-items: center;
     flex-direction: column;
     position: relative;
+    padding-top: 1rem;
     h1 {
         font-size: 5rem;
         letter-spacing: 1rem;
-        margin: 3rem 0 0 1rem;
+        margin: 0 0 0 1rem;
         text-transform: uppercase;
         text-shadow: 4px 4px 0 $accentColour;
     }
     h2 {
-        margin: 0 0 2rem .7rem;
+        margin: 0 0 1rem .7rem;
         text-transform: uppercase;
     }
     .socials {
@@ -85,9 +86,10 @@ header {
 .fa-arrow-circle-down {
     font-size: 2rem;
     position: relative;
-    top: 20px;
+    top: 25px;
     animation: arrowDown 1s cubic-bezier(.23,1,.32,1) infinite;
     transition: color .2s linear;
+    display: none;
     &:hover {
         animation-play-state: paused;
         color: $accentColour;
@@ -95,13 +97,57 @@ header {
 }
 
 @keyframes arrowDown {
-    0% {top: 20px; transform: scale(.8);}
-    50% {top: 35px; transform: scale(1);}
-    100% {top: 20px; transform: scale(.8);}
+    0% {top: 25px;}
+    50% {top: 35px;}
+    100% {top: 25px;}
 }
 
 // typed.js cursor - hide
 .typed-cursor {
     display: none;
 }
+
+// HAMBURGER NAV STYLES
+
+.hamburger {
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.line1,
+.line2,
+.line3 {
+    background: $baseColour;
+    height: 5px;
+    width: 50px;
+    position: relative;
+    transition: all .5s ease;
+    margin: 10px 0;
+  }
+
+/* ACTIVE */
+
+ .line1.active {
+    background: $baseColour;
+    height: 5px;
+    width: 50px;
+    transform: rotate(45deg);
+    transform-origin: 10%;
+    top: 32%;
+  }
+
+.line2.active {
+    visibility: hidden;
+    transition: 0s;
+  }
+
+.line3.active {
+    background: $baseColour;
+    height: 5px;
+    width: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 10%;
+  }
 

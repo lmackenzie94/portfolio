@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Luke MacKenzie | Web Developer</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
         <section class="landing wrapper">
-            <h1><span class="whiteText">Lu</span>ke</h1>
-            <h2>Mackenzie</h2>
-            <div class="landingTextBorder">
+            <nav class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </nav>
+            <h1 class="animated bounceInLeft delay-1s"><span class="whiteText">Lu</span>ke</h1>
+            <h2 class="animated bounceInRight delay-1s">Mackenzie</h2>
+            <div class="landingTextBorder animated rotateInUpLeft delay-2s">
                 <div class="landingTextBox">
                     <p id="p1"></p>
                     <p id="p2"></p>
@@ -22,11 +28,13 @@
                 </div>
             </div>
             <div class="socials">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-codepen"></i>
-                <i class="fas fa-envelope"></i>
+                <div class="animated bounceInDown delay-1s">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-codepen"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
             <a href="#portfolio">
                 <i class="fas fa-arrow-circle-down"></i>
@@ -38,13 +46,13 @@
             <h2>About Me</h2>
             <div class="aboutContent">
                 <div class="aboutImage">
-                    <img src="" alt="" />
+                    <img src="assets/aboutMe.jpg" alt="" />
                 </div>
                 <div class="aboutText">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam consectetur nostrum corporis placeat tempora ad quasi neque similique voluptatibus! Laborum dicta praesentium laudantium provident a corporis accusantium, perspiciatis fugiat.</p>
                 </div>
             </div>
-            <a href="#portfolio" class="button">Tell Me Less</a>
+            <!-- <a href="#portfolio" class="button">Tell Me Less</a> -->
         </section>
     </article>
     <main id="portfolio">
