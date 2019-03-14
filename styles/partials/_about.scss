@@ -1,10 +1,31 @@
 .aboutArticle {
-    background: linear-gradient(to right, $secondaryColour2 0%, $secondaryColour2 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%),
-                linear-gradient(to right, $secondaryColour2 0%, $secondaryColour2 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%),
-                linear-gradient(to bottom, $secondaryColour1 0%, $secondaryColour1 50%, $baseColour 50%, $baseColour 100%);
+    background: $secondaryColour1;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.aboutArticle:after {
+    content: '';
+    width: 50%;
+    height: 50%;
+    background: $baseColour;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.aboutArticle:before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    background: $secondaryColour2;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .about {
@@ -16,6 +37,7 @@
     flex-direction: column;
     margin: 35px 0;
     background: $secondaryColour1;
+    z-index: 1;
     h2 {
         text-transform: uppercase;
         text-shadow: 2px 2px 0 $accentColour;

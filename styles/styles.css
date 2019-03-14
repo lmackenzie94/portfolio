@@ -204,7 +204,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 1200px;
   padding: 0 40px;
   margin: 0 auto;
 }
@@ -477,7 +477,7 @@ header {
           transform: rotate(45deg);
   -webkit-transform-origin: 10%;
           transform-origin: 10%;
-  top: 32%;
+  top: 4%;
 }
 
 .line2.active {
@@ -497,8 +497,7 @@ header {
 }
 
 .aboutArticle {
-  background: -webkit-gradient(linear, left top, right top, from(#e63947), color-stop(50%, #e63947), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(#e63947), color-stop(50%, #e63947), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, left bottom, from(#f2f8ee), color-stop(50%, #f2f8ee), color-stop(50%, #1c3557), to(#1c3557));
-  background: linear-gradient(to right, #e63947 0%, #e63947 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, #e63947 0%, #e63947 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), linear-gradient(to bottom, #f2f8ee 0%, #f2f8ee 50%, #1c3557 50%, #1c3557 100%);
+  background: #f2f8ee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,6 +507,29 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.aboutArticle:after {
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: #1c3557;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.aboutArticle:before {
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: #e63947;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .about {
@@ -526,6 +548,7 @@ header {
           flex-direction: column;
   margin: 35px 0;
   background: #f2f8ee;
+  z-index: 1;
 }
 
 .about h2 {
@@ -745,6 +768,32 @@ main {
 .portfolioIcons i {
   font-size: 1.5rem;
   margin: 15px 5px;
+}
+
+.portfolioButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.portfolioButtons .button {
+  max-width: 50%;
+}
+
+.portfolioButtons .button:nth-of-type(2) {
+  border-color: #1c3557;
+  color: #e63947;
+}
+
+.portfolioButtons .button:nth-of-type(2):hover {
+  color: #f2f8ee;
+}
+
+.portfolioButtons .button:nth-of-type(2):before {
+  background: #1c3557;
 }
 
 .contactArticle {
