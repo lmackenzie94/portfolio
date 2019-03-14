@@ -50,6 +50,10 @@ img {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -69,13 +73,13 @@ p {
     text-decoration: none;
     font-size: .8rem;
     border: 2px solid $secondaryColour2;
-    padding: 8px 2px;
+    padding: 10px 8px 8px 8px;
     margin: 5px;
     position: relative;
     color: $baseColour;
     text-align: center;
     z-index: 0;
-    width: 180px;
+    width: auto;
     transition: all .3s ease-out;
     text-transform: uppercase;
 }

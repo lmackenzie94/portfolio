@@ -7,7 +7,7 @@ $(function () {
             $('.line1').toggleClass('active'),
             $('.line2').toggleClass('active'),
             $('.line3').toggleClass('active');
-        $('.header-nav').toggleClass('active');
+        $('.headerNav').toggleClass('active');
     });
 
     $('a').smoothScroll({
