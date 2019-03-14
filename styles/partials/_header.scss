@@ -69,12 +69,17 @@ header {
     background: $secondaryColour1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     min-height: 100%;
     width: 100%;
     padding: 2% 10% 2% 10%;
     border: 5px solid $accentColour;
+    p {
+        margin: 10px 0;
+    }
+    a {
+        display: none;
+    }
 }
 
 .fa-arrow-circle-down {
@@ -95,4 +100,8 @@ header {
     100% {top: 20px; transform: scale(.8);}
 }
 
+// typed.js cursor - hide
+.typed-cursor {
+    display: none;
+}
 

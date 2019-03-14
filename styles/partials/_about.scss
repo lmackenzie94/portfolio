@@ -6,7 +6,7 @@
 }
 
 .about {
-    min-height: 60vh;
+    min-height: 75vh;
     border: 7px solid #abdadc;
     width: 90vw;
     display: flex;
@@ -18,4 +18,24 @@
         text-shadow: 2px 2px 0 $accentColour;
         margin: 1.5rem 0;
     }
+    .button {
+        margin-bottom: 5%;
+    }
+}
+
+.aboutContent {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.aboutImage {
+    width: calc(40% - 15px);
+    height: 250px;
+    background: blue;
+    margin-right: 15px;
+}
+
+.aboutText {
+    width: calc(60% - 15px);
+    margin-left: 15px;
 }
