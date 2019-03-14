@@ -49,13 +49,13 @@ main {
     }
 }
 
-.portfolioImage1 object {
+.portfolioImage.left object {
     border: 5px solid $baseColour;
     border-radius: 10px;
 }
 
-.portfolioImage2 object {
-    border: 5px solid $secondaryColour2;
+.portfolioImage.right object {
+    border: 5px solid $accentColour;
     border-radius: 10px;
 }
 

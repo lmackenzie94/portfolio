@@ -643,13 +643,13 @@ main {
   height: 100%;
 }
 
-.portfolioImage1 object {
+.portfolioImage.left object {
   border: 5px solid #1c3557;
   border-radius: 10px;
 }
 
-.portfolioImage2 object {
-  border: 5px solid #e63947;
+.portfolioImage.right object {
+  border: 5px solid #abdadc;
   border-radius: 10px;
 }
 
