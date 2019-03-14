@@ -57,7 +57,7 @@
             font-size: .8rem;
             border: 2px solid $baseColour;
             padding: 8px 2px;
-            margin: 5px;
+            margin: 5px 5px 20px 5px;
             position: relative;
             color: $baseColour;
             text-align: center;
@@ -97,18 +97,49 @@
     .socials {
         position: absolute;
         right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        i {
-            display: block;
-            margin: 20px 0;
-            font-size: 1.2rem;
-            transition: all .3s ease;
-            &:hover,
-            &:active {
-                transform: scale(1.2);
-                color: $secondaryColour2;
+        top: 15%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        a {
+            display: inline-block;
+            margin: 50% 0;
+            i {
+                font-size: 1.2rem;
+                transition: all .3s ease;
+                &:hover,
+                &:active {
+                    transform: scale(1.2);
+                    color: $secondaryColour2;
+                }
             }
         }
+    }
+}
+
+// CONTACT MEDIA QUERIES
+
+@media (max-width: 790px) {
+    .contact .socials {
+        position: static;
+        flex-direction: row;
+        a {
+            margin: 30px 10px 20px 10px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .contact form textarea,
+    .contact form input:not([type="submit"]),
+    .contact form input[type="submit"],
+    .contact form label, 
+    .contact form label:nth-of-type(3) {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .contact h2 {
+        margin-left: 1.3rem;
     }
 }

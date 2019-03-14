@@ -29,18 +29,21 @@ header {
     .socials {
         position: absolute;
         right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 25%;
         text-align: center;
-        i {
-            display: block;
-            margin: 20px 0;
-            font-size: 1.2rem;
-            transition: all .3s ease;
-            &:hover,
-            &:active {
-                transform: scale(1.2);
-                color: $secondaryColour2;
+        display: flex;
+        flex-direction: column;
+        a {
+            display: inline-block;
+            margin: 50% 0;
+            i {
+                font-size: 1.2rem;
+                transition: all .3s ease;
+                &:hover,
+                &:active {
+                    transform: scale(1.2);
+                    color: $secondaryColour2;
+                }
             }
         }
     }
@@ -51,7 +54,7 @@ header {
     background: transparent;
     margin-top: 10px;
     position: relative;
-    width: 65%;
+    width: 60%;
     padding: 1%;
     &:after {
         @include circle("");
@@ -98,7 +101,7 @@ nav {
     transition: all .3s ease-out;
     a {
         display: inline-block;
-        margin-left: 50px;
+        margin-left: 40px;
         padding: 5px 0;
         &:hover {
             color: $accentColour;
@@ -162,15 +165,11 @@ nav {
 
 @media (max-width: 790px) {
     .landing .socials {
-        top: 88%;
-        right: 50%;
-        transform: translateX(50%);
-        text-align: center;
-        .animated {
-            display: flex;
-            i {
-                margin: 15px;
-            }
+        flex-direction: row;
+        right: 45%;
+        top: 90%;
+        a {
+            margin: 2% 5%;
         }
     }
 
@@ -186,8 +185,23 @@ nav {
 }
 
 @media (max-width: 440px) {
+    .landing {
+        width: 95vw;
+    }
     .landing h1 {
         font-size: 3.7rem;
+    }
+    .landing .socials {
+        right: 42%;
+    }
+    .headerNav a {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .headerNav a {
+        margin-left: 12px;
     }
 }
 

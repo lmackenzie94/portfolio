@@ -211,7 +211,7 @@ body {
 
 .wrapper {
   max-width: 1200px;
-  padding: 0 40px;
+  padding: 0 5%;
   margin: 0 auto;
 }
 
@@ -275,6 +275,7 @@ p {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .button:before {
@@ -283,7 +284,7 @@ p {
   z-index: -1;
   top: 0;
   left: 0;
-  right: 0;
+  right: -1px;
   bottom: 0;
   background: #e63947;
   -webkit-transform: scaleY(0);
@@ -358,21 +359,29 @@ header {
 .landing .socials {
   position: absolute;
   right: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 25%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.landing .socials i {
-  display: block;
-  margin: 20px 0;
+.landing .socials a {
+  display: inline-block;
+  margin: 50% 0;
+}
+
+.landing .socials a i {
   font-size: 1.2rem;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.landing .socials i:hover, .landing .socials i:active {
+.landing .socials a i:hover, .landing .socials a i:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: #e63947;
@@ -383,7 +392,7 @@ header {
   background: transparent;
   margin-top: 10px;
   position: relative;
-  width: 65%;
+  width: 60%;
   padding: 1%;
 }
 
@@ -481,7 +490,7 @@ nav {
 
 .headerNav a {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 40px;
   padding: 5px 0;
 }
 
@@ -546,19 +555,15 @@ nav {
 
 @media (max-width: 790px) {
   .landing .socials {
-    top: 88%;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-    text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    right: 45%;
+    top: 90%;
   }
-  .landing .socials .animated {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .landing .socials .animated i {
-    margin: 15px;
+  .landing .socials a {
+    margin: 2% 5%;
   }
   .landingTextBorder {
     width: 90%;
@@ -572,8 +577,23 @@ nav {
 }
 
 @media (max-width: 440px) {
+  .landing {
+    width: 95vw;
+  }
   .landing h1 {
     font-size: 3.7rem;
+  }
+  .landing .socials {
+    right: 42%;
+  }
+  .headerNav a {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .headerNav a {
+    margin-left: 12px;
   }
 }
 
@@ -614,7 +634,7 @@ nav {
 }
 
 .about {
-  min-height: 75vh;
+  min-height: 65vh;
   border: 7px solid #abdadc;
   width: 90vw;
   display: -webkit-box;
@@ -639,7 +659,7 @@ nav {
 }
 
 .about .button {
-  margin-bottom: 5%;
+  margin: 20px 0;
 }
 
 .aboutContent {
@@ -667,6 +687,36 @@ nav {
 .aboutText {
   width: calc(60% - 15px);
   margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+  .aboutContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutImage {
+    margin: 0 0 3% 0;
+    width: 50%;
+  }
+  .aboutText {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about h2 {
+    margin: 1.5rem 0 1rem 0;
+  }
 }
 
 main {
@@ -745,30 +795,27 @@ main {
   width: 100%;
   max-width: 100%;
   height: 100%;
-}
-
-.portfolioImage.left object {
   border: 5px solid #1c3557;
-  border-radius: 10px;
-}
-
-.portfolioImage.right object {
-  border: 5px solid #abdadc;
   border-radius: 10px;
 }
 
 .portfolioDescription {
   background: #f2f8ee;
   position: relative;
-  width: 100%;
   height: 80%;
   border: 5px solid #abdadc;
   border-radius: 10px;
   padding: 20px;
-}
-
-.descriptionTwo {
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .descriptionOne::after {
@@ -825,7 +872,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
-  right: -43px;
+  left: -43px;
 }
 
 @media (max-width: 650px) {
@@ -884,14 +931,16 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolioIcons i {
   font-size: 1.5rem;
-  margin: 15px 5px;
+  margin: 5px 15px;
 }
 
 .portfolioButtons {
@@ -918,6 +967,26 @@ main {
 
 .portfolioButtons .button:nth-of-type(2):before {
   background: #1c3557;
+}
+
+@media (max-width: 900px) {
+  .portfolioContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolioItem {
+    width: 90%;
+  }
+  .portfolioDescription {
+    text-align: center;
+  }
+  .descriptionOne::after,
+  .descriptionTwo::after,
+  .descriptionThree::after {
+    left: 250px;
+  }
 }
 
 .contactArticle {
@@ -1008,7 +1077,7 @@ main {
   font-size: .8rem;
   border: 2px solid #1c3557;
   padding: 8px 2px;
-  margin: 5px;
+  margin: 5px 5px 20px 5px;
   position: relative;
   color: #1c3557;
   text-align: center;
@@ -1053,23 +1122,59 @@ main {
 .contact .socials {
   position: absolute;
   right: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 15%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.contact .socials i {
-  display: block;
-  margin: 20px 0;
+.contact .socials a {
+  display: inline-block;
+  margin: 50% 0;
+}
+
+.contact .socials a i {
   font-size: 1.2rem;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.contact .socials i:hover, .contact .socials i:active {
+.contact .socials a i:hover, .contact .socials a i:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: #e63947;
+}
+
+@media (max-width: 790px) {
+  .contact .socials {
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact .socials a {
+    margin: 30px 10px 20px 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .contact form textarea,
+  .contact form input:not([type="submit"]),
+  .contact form input[type="submit"],
+  .contact form label,
+  .contact form label:nth-of-type(3) {
+    width: 100%;
+    min-width: 100%;
+  }
+  .contact h2 {
+    margin-left: 1.3rem;
+  }
 }
 
 footer {
