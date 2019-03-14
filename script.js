@@ -1,6 +1,6 @@
 $(function () {
 
-    $('.landingTextBox .button, .fa-arrow-circle-down').delay(9000).show(0); 
+    $('.landingTextBox .button').delay(8500).show(0); 
 
     $('.hamburger').on('click', function () {
         $('.hamburger').toggleClass('active'),

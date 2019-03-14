@@ -23,7 +23,7 @@ header {
         text-shadow: 4px 4px 0 $accentColour;
     }
     h2 {
-        margin: 0 0 1rem .7rem;
+        margin: 0 0 1.4rem .7rem;
         text-transform: uppercase;
     }
     .socials {
@@ -51,18 +51,12 @@ header {
     background: transparent;
     margin-top: 10px;
     position: relative;
-    min-height: 250px;
-    width: 500px;
+    width: 65%;
     padding: 1%;
     &:after {
-        content: '';
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        top: -50px;
-        left: -50px;
-        background: $accentColour;
+        @include circle("");
+        left: -32px;
+        top: -40px;
     }
 }
 
@@ -75,31 +69,13 @@ header {
     width: 100%;
     padding: 2% 5% 2% 5%;
     border: 5px solid $accentColour;
+    text-align: center;
     p {
         margin: 10px 0;
     }
     a {
         display: none;
     }
-}
-
-.fa-arrow-circle-down {
-    font-size: 2rem;
-    position: relative;
-    top: 25px;
-    animation: arrowDown 1s cubic-bezier(.23,1,.32,1) infinite;
-    transition: color .2s linear;
-    display: none;
-    &:hover {
-        animation-play-state: paused;
-        color: $accentColour;
-    }
-}
-
-@keyframes arrowDown {
-    0% {top: 25px;}
-    50% {top: 35px;}
-    100% {top: 25px;}
 }
 
 // typed.js cursor - hide
@@ -134,14 +110,11 @@ nav {
     top: 0px;
 }
 
-
-
-
 // HAMBURGER NAV STYLES
 
 .hamburger {
   height: 40px;
-  width: 50px;
+  width: 40px;
   cursor: pointer;
   align-self: flex-start;
 }
@@ -151,13 +124,13 @@ nav {
 .line3 {
     background: $baseColour;
     height: 5px;
-    width: 50px;
+    width: 40px;
     position: relative;
     transition: all .5s ease;
   }
 
 .line2 {
-    margin: 10px 0;
+    margin: 7px 0;
 }
 
 /* ACTIVE */
@@ -165,7 +138,7 @@ nav {
  .line1.active {
     background: $baseColour;
     height: 5px;
-    width: 50px;
+    width: 40px;
     transform: rotate(45deg);
     transform-origin: 10%;
     top: 4%;
@@ -179,8 +152,43 @@ nav {
 .line3.active {
     background: $baseColour;
     height: 5px;
-    width: 50px;
+    width: 40px;
     transform: rotate(-45deg);
     transform-origin: 10%;
   }
+
+
+// HEADER MEDIA QUERIES
+
+@media (max-width: 790px) {
+    .landing .socials {
+        top: 88%;
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+        .animated {
+            display: flex;
+            i {
+                margin: 15px;
+            }
+        }
+    }
+
+    .landingTextBorder {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .landing h1 {
+        font-size: 4.7rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .landing h1 {
+        font-size: 3.7rem;
+    }
+}
+
 

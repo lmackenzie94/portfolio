@@ -203,6 +203,12 @@ body {
   letter-spacing: 0.07rem;
 }
 
+@media (max-width: 600px) {
+  body {
+    font-size: .8rem;
+  }
+}
+
 .wrapper {
   max-width: 1200px;
   padding: 0 40px;
@@ -217,6 +223,18 @@ h1, h2, p, section, ul, li {
 h2 {
   letter-spacing: .4rem;
   font-size: 2.2rem;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 440px) {
+  h2 {
+    font-size: 1.6rem;
+  }
 }
 
 img {
@@ -333,7 +351,7 @@ header {
 }
 
 .landing h2 {
-  margin: 0 0 1rem .7rem;
+  margin: 0 0 1.4rem .7rem;
   text-transform: uppercase;
 }
 
@@ -365,20 +383,45 @@ header {
   background: transparent;
   margin-top: 10px;
   position: relative;
-  min-height: 250px;
-  width: 500px;
+  width: 65%;
   padding: 1%;
 }
 
 .landingTextBorder:after {
-  content: '';
+  content: "";
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   top: -50px;
-  left: -50px;
   background: #abdadc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  left: -32px;
+  top: -40px;
+}
+
+@media (max-width: 650px) {
+  .landingTextBorder:after {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .landingTextBorder:after {
+    height: 60px;
+    width: 60px;
+    top: -30px;
+  }
 }
 
 .landingTextBox {
@@ -397,6 +440,7 @@ header {
   width: 100%;
   padding: 2% 5% 2% 5%;
   border: 5px solid #abdadc;
+  text-align: center;
 }
 
 .landingTextBox p {
@@ -405,47 +449,6 @@ header {
 
 .landingTextBox a {
   display: none;
-}
-
-.fa-arrow-circle-down {
-  font-size: 2rem;
-  position: relative;
-  top: 25px;
-  -webkit-animation: arrowDown 1s cubic-bezier(0.23, 1, 0.32, 1) infinite;
-          animation: arrowDown 1s cubic-bezier(0.23, 1, 0.32, 1) infinite;
-  -webkit-transition: color .2s linear;
-  transition: color .2s linear;
-  display: none;
-}
-
-.fa-arrow-circle-down:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  color: #abdadc;
-}
-
-@-webkit-keyframes arrowDown {
-  0% {
-    top: 25px;
-  }
-  50% {
-    top: 35px;
-  }
-  100% {
-    top: 25px;
-  }
-}
-
-@keyframes arrowDown {
-  0% {
-    top: 25px;
-  }
-  50% {
-    top: 35px;
-  }
-  100% {
-    top: 25px;
-  }
 }
 
 .typed-cursor {
@@ -492,7 +495,7 @@ nav {
 
 .hamburger {
   height: 40px;
-  width: 50px;
+  width: 40px;
   cursor: pointer;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -503,21 +506,21 @@ nav {
 .line3 {
   background: #1c3557;
   height: 5px;
-  width: 50px;
+  width: 40px;
   position: relative;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
 .line2 {
-  margin: 10px 0;
+  margin: 7px 0;
 }
 
 /* ACTIVE */
 .line1.active {
   background: #1c3557;
   height: 5px;
-  width: 50px;
+  width: 40px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: 10%;
@@ -534,11 +537,44 @@ nav {
 .line3.active {
   background: #1c3557;
   height: 5px;
-  width: 50px;
+  width: 40px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 10%;
           transform-origin: 10%;
+}
+
+@media (max-width: 790px) {
+  .landing .socials {
+    top: 88%;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    text-align: center;
+  }
+  .landing .socials .animated {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .landing .socials .animated i {
+    margin: 15px;
+  }
+  .landingTextBorder {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing h1 {
+    font-size: 4.7rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .landing h1 {
+    font-size: 3.7rem;
+  }
 }
 
 .aboutArticle {
@@ -738,8 +774,8 @@ main {
 .descriptionOne::after {
   content: "01";
   position: absolute;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   top: -50px;
   background: #abdadc;
@@ -756,11 +792,26 @@ main {
   left: -43px;
 }
 
+@media (max-width: 650px) {
+  .descriptionOne::after {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .descriptionOne::after {
+    height: 60px;
+    width: 60px;
+    top: -30px;
+  }
+}
+
 .descriptionTwo::after {
   content: "02";
   position: absolute;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   top: -50px;
   background: #abdadc;
@@ -777,11 +828,26 @@ main {
   right: -43px;
 }
 
+@media (max-width: 650px) {
+  .descriptionTwo::after {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .descriptionTwo::after {
+    height: 60px;
+    width: 60px;
+    top: -30px;
+  }
+}
+
 .descriptionThree::after {
   content: "03";
   position: absolute;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   top: -50px;
   background: #abdadc;
@@ -796,6 +862,21 @@ main {
           align-items: center;
   font-size: 1.5rem;
   left: -43px;
+}
+
+@media (max-width: 650px) {
+  .descriptionThree::after {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .descriptionThree::after {
+    height: 60px;
+    width: 60px;
+    top: -30px;
+  }
 }
 
 .portfolioIcons {

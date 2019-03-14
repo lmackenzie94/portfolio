@@ -73,33 +73,19 @@ main {
     text-align: right;
 }
 
-// mixin for the stylistic description circle
-@mixin descriptionCircle($content) {
-    content: $content;
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    top: -50px;
-    background: #abdadc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
 
 .descriptionOne::after {
-    @include descriptionCircle('01');
+    @include circle('01');
     left: -43px;
 }
 
 .descriptionTwo::after {
-   @include descriptionCircle('02');
+   @include circle('02');
    right: -43px;
 }
 
 .descriptionThree::after {
-    @include descriptionCircle('03');
+    @include circle('03');
     left: -43px;
 }
 
