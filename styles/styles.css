@@ -457,6 +457,7 @@ header {
 
 .landingTextBox a {
   display: none;
+  margin: 10px 0;
 }
 
 .typed-cursor {
@@ -657,18 +658,12 @@ nav {
   margin: 1.5rem 0 1rem 0;
 }
 
-.aboutContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 5%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.about a {
+  margin: 1% 0 3% 0;
 }
 
 .aboutImage {
-  width: 35%;
+  width: 25%;
   margin-bottom: 20px;
 }
 
@@ -680,11 +675,11 @@ nav {
 }
 
 .aboutText {
-  width: 60%;
+  width: 100%;
 }
 
 .aboutText p {
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   width: 100%;
 }
 
@@ -761,8 +756,8 @@ main {
 }
 
 .portfolioItem {
-  height: 75vh;
-  width: 43%;
+  margin: 10% 0;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,20 +770,11 @@ main {
   background: #e63947;
   position: relative;
   width: 100%;
-  min-height: 80%;
-}
-
-.portfolioImage object {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  border: 5px solid #1c3557;
 }
 
 .portfolioDescription {
   background: #f2f8ee;
   position: relative;
-  min-height: 80%;
   border: 5px solid #abdadc;
   padding: 20px;
   display: -webkit-box;
@@ -803,112 +789,17 @@ main {
           justify-content: space-evenly;
 }
 
-.descriptionOne::after {
-  content: "01";
-  position: absolute;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  top: -50px;
-  background: #abdadc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5rem;
-  left: -43px;
+.portfolioDescription h3 {
+  margin: 0;
+  text-align: center;
 }
 
-@media (max-width: 650px) {
-  .descriptionOne::after {
-    height: 80px;
-    width: 80px;
-  }
+.portfolioDescription p {
+  margin: 5%;
 }
 
-@media (max-width: 500px) {
-  .descriptionOne::after {
-    height: 60px;
-    width: 60px;
-    top: -30px;
-  }
-}
-
-.descriptionTwo::after {
-  content: "02";
-  position: absolute;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  top: -50px;
-  background: #abdadc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5rem;
-  left: -43px;
-}
-
-@media (max-width: 650px) {
-  .descriptionTwo::after {
-    height: 80px;
-    width: 80px;
-  }
-}
-
-@media (max-width: 500px) {
-  .descriptionTwo::after {
-    height: 60px;
-    width: 60px;
-    top: -30px;
-  }
-}
-
-.descriptionThree::after {
-  content: "03";
-  position: absolute;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  top: -50px;
-  background: #abdadc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5rem;
-  left: -43px;
-}
-
-@media (max-width: 650px) {
-  .descriptionThree::after {
-    height: 80px;
-    width: 80px;
-  }
-}
-
-@media (max-width: 500px) {
-  .descriptionThree::after {
-    height: 60px;
-    width: 60px;
-    top: -30px;
-  }
+.portfolioDescription .button {
+  margin-top: 5%;
 }
 
 .portfolioIcons {
@@ -924,7 +815,7 @@ main {
 }
 
 .portfolioIcons i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 5px 15px;
 }
 
@@ -954,7 +845,7 @@ main {
   background: #1c3557;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .portfolioContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -963,9 +854,7 @@ main {
   }
   .portfolioItem {
     width: 90%;
-  }
-  .portfolioImage {
-    min-height: 90%;
+    margin: 5% 0;
   }
   .portfolioDescription {
     text-align: center;

@@ -43,16 +43,13 @@
         text-shadow: 2px 2px 0 $accentColour;
         margin: 1.5rem 0 1rem 0;
     }
-}
-
-.aboutContent {
-    display: flex;
-    margin-bottom: 5%;
-    justify-content: space-between;
+    a {
+        margin: 1% 0 3% 0;
+    }
 }
 
 .aboutImage {
-    width: 35%;
+    width: 25%;
     margin-bottom: 20px;
     img {
         border-radius: 50%;
@@ -62,9 +59,9 @@
 }
 
 .aboutText {
-    width: 60%;
+    width: 100%;
     p {
-        margin-bottom: 20px;
+        margin-bottom: 2%;
         width: 100%;
     }
 }
