@@ -14,7 +14,6 @@ $(function () {
         speed: 600
     });
 
-
 });
 
 // typed.js
@@ -39,3 +38,7 @@ var typed = new Typed('#p3', {
     typeSpeed: 40,
     startDelay: 7000
 });
+
+// wow.js
+new WOW().init();
+

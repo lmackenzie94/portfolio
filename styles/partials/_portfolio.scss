@@ -41,13 +41,11 @@ main {
     position: relative;
     width: 100%;
     height: 80%;
-    border-radius: 10px;
     object {
         width: 100%;
         max-width: 100%;
         height: 100%;
         border: 5px solid $baseColour;
-        border-radius: 10px;
     }
 }
 
@@ -56,7 +54,6 @@ main {
     position: relative;
     height: 80%;
     border: 5px solid #abdadc;
-    border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -125,6 +122,22 @@ main {
     .descriptionOne::after,
     .descriptionTwo::after,
     .descriptionThree::after {
-        left: 250px;
+        left: 42%;
+    }
+}
+
+@media (max-width: 600px) {
+    .descriptionOne::after,
+    .descriptionTwo::after,
+    .descriptionThree::after {
+        left: 38%;
+    }
+}
+
+@media (max-width: 500px) {
+    .descriptionOne::after,
+    .descriptionTwo::after,
+    .descriptionThree::after {
+        left: 40%;
     }
 }
