@@ -14,9 +14,18 @@ main {
     flex-direction: column;
     margin: 35px 0;
     h2 {
-        margin: 1.5rem 0 0 1.3rem;
+        margin: 1.5rem 0 1.5rem 1.3rem;
         text-transform: uppercase;
         text-shadow: 2px 2px 0 $accentColour;
+    }
+    h3 {
+        margin: 0;
+        padding: 5px 10px;
+        border: 3px solid $baseColour;
+        background: $secondaryColour2;
+        color: $secondaryColour1;
+        text-transform: uppercase;
+        z-index: 1;
     }
 }
 
@@ -27,9 +36,11 @@ main {
     align-items: center;
     flex-wrap: wrap;
     background: transparentize($secondaryColour1, .1);
-    border: 5px solid $accentColour;
-    margin: 5% 0;
+    border: 5px solid $baseColour;
+    margin-bottom: 5%;
+    margin-top: -20px;
     padding: 5% 2%;
+    position: relative;
 }
 
 .portfolioItem {
@@ -45,18 +56,17 @@ main {
 }
 
 .portfolioImage.darkBorder {
-    border: 5px solid $baseColour;  
+    border: 5px solid $accentColour; 
 }
 
 .portfolioImage.lightBorder {
-    border: 5px solid $baseColour; // changes
+    border: 5px solid $accentColour;// changes
 }
 
 .portfolioDescription {
     background: $secondaryColour1;
-    position: relative;
     width: 100%;
-    border: 5px solid $baseColour; //changed 
+    border: 5px solid $accentColour;//changed 
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -76,7 +86,8 @@ main {
 
 // .descriptionOne::after {
 //     @include circle('01');
-//     left: -10px;
+//     left: 50%;
+//     transform: translateX(-50%);
 // }
 
 // .descriptionTwo::after {
@@ -136,18 +147,14 @@ main {
         margin: 5% 0;
     }
 
-    .portfolioDescription {
-        border-color: $baseColour;
-    }
-
-    .portfolioImage.darkBorder {
-        border-color: $accentColour;
-    }
-
     .descriptionOne::after,
     .descriptionTwo::after,
     .descriptionThree::after {
         left: 42%;
+    }
+
+    .flexOrder {
+        order: -1;
     }
 }
 
