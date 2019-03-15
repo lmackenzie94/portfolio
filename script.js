@@ -40,5 +40,8 @@ var typed = new Typed('#p3', {
 });
 
 // wow.js
+
 new WOW().init();
+
+
 

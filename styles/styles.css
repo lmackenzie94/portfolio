@@ -326,6 +326,10 @@ p {
   color: #abdadc;
 }
 
+.wow {
+  visibility: hidden;
+}
+
 header {
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, right top, from(#e63947), color-stop(50%, #e63947), color-stop(50%, #f2f8ee), to(#f2f8ee));
@@ -395,43 +399,6 @@ header {
   padding: 1%;
 }
 
-.landingTextBorder:after {
-  content: "";
-  position: absolute;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  top: -50px;
-  background: #abdadc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5rem;
-  left: -32px;
-  top: -40px;
-}
-
-@media (max-width: 650px) {
-  .landingTextBorder:after {
-    height: 80px;
-    width: 80px;
-  }
-}
-
-@media (max-width: 500px) {
-  .landingTextBorder:after {
-    height: 60px;
-    width: 60px;
-    top: -30px;
-  }
-}
-
 .landingTextBox {
   background: #f2f8ee;
   display: -webkit-box;
@@ -452,7 +419,7 @@ header {
 }
 
 .landingTextBox p {
-  margin: 10px 0;
+  margin: 7px 0;
 }
 
 .landingTextBox a {
@@ -650,12 +617,13 @@ nav {
   margin: 35px 0;
   background: #f2f8ee;
   z-index: 1;
+  padding: 2%;
 }
 
 .about h2 {
   text-transform: uppercase;
   text-shadow: 2px 2px 0 #abdadc;
-  margin: 1.5rem 0 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .about a {
@@ -680,6 +648,7 @@ nav {
 .aboutText p {
   margin-bottom: 10px;
   padding-left: 5%;
+  font-size: .9rem;
 }
 
 @media (max-width: 900px) {
@@ -754,11 +723,14 @@ main {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: rgba(242, 248, 238, 0.9);
+  border: 5px solid #abdadc;
+  margin: 5% 0;
+  padding: 5% 2%;
 }
 
 .portfolioItem {
-  margin: 5% 0;
-  width: 47%;
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,14 +750,14 @@ main {
 }
 
 .portfolioImage.lightBorder {
-  border: 5px solid #abdadc;
+  border: 5px solid #1c3557;
 }
 
 .portfolioDescription {
   background: #f2f8ee;
   position: relative;
   width: 100%;
-  border: 5px solid #abdadc;
+  border: 5px solid #1c3557;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;

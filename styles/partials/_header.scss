@@ -43,11 +43,11 @@ header {
     position: relative;
     width: 60%;
     padding: 1%;
-    &:after {
-        @include circle("");
-        left: -32px;
-        top: -40px;
-    }
+    // &:after {
+    //     @include circle("");
+    //     left: -32px;
+    //     top: -40px;
+    // }
 }
 
 .landingTextBox {
@@ -61,7 +61,7 @@ header {
     border: 5px solid $accentColour;
     text-align: center;
     p {
-        margin: 10px 0;
+        margin: 7px 0;
     }
     a {
         display: none;
