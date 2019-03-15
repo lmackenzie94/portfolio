@@ -211,7 +211,7 @@ body {
 
 .wrapper {
   max-width: 1200px;
-  padding: 0 5%;
+  padding: 0 4%;
   margin: 0 auto;
 }
 
@@ -309,6 +309,23 @@ p {
           transform: scaleY(1);
 }
 
+.socials a {
+  display: inline-block;
+  margin: 50% 0;
+}
+
+.socials a i {
+  font-size: 1.2rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.socials a i:hover, .socials a i:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #abdadc;
+}
+
 header {
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, right top, from(#e63947), color-stop(50%, #e63947), color-stop(50%, #f2f8ee), to(#f2f8ee));
@@ -326,7 +343,7 @@ header {
 
 .landing {
   border: 7px solid #1c3557;
-  width: 90vw;
+  width: 95vw;
   min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,23 +384,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.landing .socials a {
-  display: inline-block;
-  margin: 50% 0;
-}
-
-.landing .socials a i {
-  font-size: 1.2rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.landing .socials a i:hover, .landing .socials a i:active {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: #e63947;
 }
 
 .landingTextBorder {
@@ -636,7 +636,7 @@ nav {
 .about {
   min-height: 65vh;
   border: 7px solid #abdadc;
-  width: 90vw;
+  width: 95vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,31 +659,30 @@ nav {
 }
 
 .about a {
-  margin: 1% 0 3% 0;
+  margin: 1% 0 3% 5%;
 }
 
-.aboutImage {
-  width: 25%;
-  margin-bottom: 20px;
+.aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.aboutImage img {
-  border-radius: 50%;
+.aboutImage1 {
   border: 4px solid #1c3557;
-  -webkit-box-shadow: 3px 3px 10px #999;
-          box-shadow: 3px 3px 10px #999;
 }
 
-.aboutText {
-  width: 100%;
+.aboutImage2 {
+  border: 4px solid #1c3557;
+  display: none;
 }
 
 .aboutText p {
-  margin-bottom: 2%;
-  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 5%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .aboutContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -695,10 +694,13 @@ nav {
   }
   .aboutImage {
     margin: 0 0 5% 0;
-    width: 50%;
+    width: 220px;
   }
-  .aboutText {
-    width: 100%;
+  .aboutImage1 {
+    display: none;
+  }
+  .aboutImage2 {
+    display: block;
   }
 }
 
@@ -719,7 +721,7 @@ main {
 
 .portfolio {
   border: 7px solid #e63947;
-  width: 90vw;
+  width: 95vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,14 +752,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .portfolioItem {
-  margin: 10% 0;
-  width: 45%;
+  margin: 5% 0;
+  width: 47%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,14 +768,23 @@ main {
 }
 
 .portfolioImage {
-  background: #e63947;
   position: relative;
   width: 100%;
+  padding: 1%;
+}
+
+.portfolioImage.darkBorder {
+  border: 5px solid #1c3557;
+}
+
+.portfolioImage.lightBorder {
+  border: 5px solid #abdadc;
 }
 
 .portfolioDescription {
   background: #f2f8ee;
   position: relative;
+  width: 100%;
   border: 5px solid #abdadc;
   padding: 20px;
   display: -webkit-box;
@@ -795,7 +805,8 @@ main {
 }
 
 .portfolioDescription p {
-  margin: 5%;
+  margin: 5% 0;
+  text-align: center;
 }
 
 .portfolioDescription .button {
@@ -815,17 +826,25 @@ main {
 }
 
 .portfolioIcons i {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 5px 15px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.portfolioIcons i:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  color: #abdadc;
 }
 
 .portfolioButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portfolioButtons .button {
@@ -835,6 +854,7 @@ main {
 .portfolioButtons .button:nth-of-type(2) {
   border-color: #1c3557;
   color: #e63947;
+  margin-left: 10%;
 }
 
 .portfolioButtons .button:nth-of-type(2):hover {
@@ -857,8 +877,10 @@ main {
     margin: 5% 0;
   }
   .portfolioDescription {
-    text-align: center;
-    min-height: 65%;
+    border-color: #1c3557;
+  }
+  .portfolioImage.darkBorder {
+    border-color: #abdadc;
   }
   .descriptionOne::after,
   .descriptionTwo::after,
@@ -900,7 +922,7 @@ main {
 .contact {
   min-height: 75vh;
   border: 7px solid #1c3557;
-  width: 90vw;
+  width: 95vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,23 +1047,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.contact .socials a {
-  display: inline-block;
-  margin: 50% 0;
-}
-
-.contact .socials a i {
-  font-size: 1.2rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.contact .socials a i:hover, .contact .socials a i:active {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: #e63947;
 }
 
 @media (max-width: 790px) {

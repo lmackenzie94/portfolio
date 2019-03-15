@@ -8,7 +8,7 @@ header {
 
 .landing {
     border: 7px solid $baseColour;
-    width: 90vw;
+    width: 95vw;
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -33,19 +33,6 @@ header {
         text-align: center;
         display: flex;
         flex-direction: column;
-        a {
-            display: inline-block;
-            margin: 50% 0;
-            i {
-                font-size: 1.2rem;
-                transition: all .3s ease;
-                &:hover,
-                &:active {
-                    transform: scale(1.2);
-                    color: $secondaryColour2;
-                }
-            }
-        }
     }
 }
 

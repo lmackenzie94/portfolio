@@ -57,7 +57,7 @@ body {
 
 .wrapper {
     max-width: 1200px;
-    padding: 0 5%;
+    padding: 0 4%;
     margin: 0 auto;
 }
 
@@ -145,4 +145,18 @@ p {
 
 .button:hover:before {
     transform: scaleY(1);
+}
+
+.socials a {
+    display: inline-block;
+    margin: 50% 0;
+    i {
+        font-size: 1.2rem;
+        transition: all .3s ease;
+        &:hover,
+        &:active {
+            transform: scale(1.2);
+            color: $accentColour;
+        }
+    }
 }

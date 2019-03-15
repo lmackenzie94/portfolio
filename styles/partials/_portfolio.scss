@@ -1,14 +1,14 @@
 main {
     min-height: 100vh;
-    background-image: linear-gradient(to right, #f2f8ee 0%, #f2f8ee 50%, #1c3557 50%, #1c3557 100%);
+    background-image: linear-gradient(to right, $secondaryColour1 0%, $secondaryColour1 50%, $baseColour 50%, $baseColour 100%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .portfolio {
-    border: 7px solid #e63947;
-    width: 90vw;
+    border: 7px solid $secondaryColour2;
+    width: 95vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,27 +25,35 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
     flex-wrap: wrap;
 }
 
 .portfolioItem {
-    margin: 10% 0;
-    width: 45%;
+    margin: 5% 0;
+    width: 47%;
     display: flex;
     align-items: center;
 }
 
 .portfolioImage {
-    background: $secondaryColour2;
     position: relative;
     width: 100%;
+    padding: 1%;
+}
+
+.portfolioImage.darkBorder {
+    border: 5px solid $baseColour;  
+}
+
+.portfolioImage.lightBorder {
+    border: 5px solid $accentColour;
 }
 
 .portfolioDescription {
-    background: #f2f8ee;
+    background: $secondaryColour1;
     position: relative;
-    border: 5px solid #abdadc;
+    width: 100%;
+    border: 5px solid $accentColour;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -55,7 +63,8 @@ main {
         text-align: center;
     }
     p { 
-        margin: 5%;
+        margin: 5% 0;
+        text-align: center;
     }
     .button {
         margin-top: 5%;
@@ -83,19 +92,25 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     i {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 5px 15px;
+        transition: all .2s ease-out;
+        &:hover {
+            transform: scale(1.15);
+            color: $accentColour;
+        }
     }
 }
 
 .portfolioButtons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     .button {
         max-width: 50%;
         &:nth-of-type(2) {
             border-color: $baseColour;
             color: $secondaryColour2;
+            margin-left: 10%;
             &:hover {
                 color: $secondaryColour1;
             }
@@ -119,8 +134,11 @@ main {
     }
 
     .portfolioDescription {
-        text-align: center;
-        min-height: 65%;
+        border-color: $baseColour;
+    }
+
+    .portfolioImage.darkBorder {
+        border-color: $accentColour;
     }
 
     .descriptionOne::after,
