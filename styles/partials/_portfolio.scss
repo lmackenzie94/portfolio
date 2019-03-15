@@ -40,7 +40,7 @@ main {
     background: $secondaryColour2;
     position: relative;
     width: 100%;
-    height: 80%;
+    min-height: 80%;
     object {
         width: 100%;
         max-width: 100%;
@@ -52,7 +52,7 @@ main {
 .portfolioDescription {
     background: #f2f8ee;
     position: relative;
-    height: 80%;
+    min-height: 80%;
     border: 5px solid #abdadc;
     padding: 20px;
     display: flex;
@@ -115,8 +115,13 @@ main {
         width: 90%;
     }
 
+    .portfolioImage {
+        min-height: 90%;
+    }
+
     .portfolioDescription {
         text-align: center;
+        min-height: 65%;
     }
 
     .descriptionOne::after,

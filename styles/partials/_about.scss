@@ -41,22 +41,19 @@
     h2 {
         text-transform: uppercase;
         text-shadow: 2px 2px 0 $accentColour;
-        margin: 1.5rem 0;
-    }
-    .button {
-        margin: 20px 0;
+        margin: 1.5rem 0 1rem 0;
     }
 }
 
 .aboutContent {
     display: flex;
     margin-bottom: 5%;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .aboutImage {
-    width: calc(40% - 15px);
-    margin-right: 15px;
+    width: 35%;
+    margin-bottom: 20px;
     img {
         border-radius: 50%;
         border: 4px solid $baseColour;
@@ -65,31 +62,28 @@
 }
 
 .aboutText {
-    width: calc(60% - 15px);
-    margin-left: 15px;
+    width: 60%;
+    p {
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }
 
 // ABOUT MEDIA QUERIES
 
 @media (max-width: 800px) {
+
     .aboutContent {
         flex-direction: column;
+        align-items: center;
     }
 
     .aboutImage {
-        margin: 0 0 3% 0;
+        margin: 0 0 5% 0;
         width: 50%;
     }
 
     .aboutText {
         width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about h2 {
-        margin: 1.5rem 0 1rem 0;
     }
 }
