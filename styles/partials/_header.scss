@@ -18,7 +18,7 @@ header {
     h1 {
         font-size: 5rem;
         letter-spacing: 1rem;
-        margin: 0 0 0 1rem;
+        margin: 1rem 0 0 1rem;
         text-transform: uppercase;
         text-shadow: 4px 4px 0 $accentColour;
     }
@@ -28,7 +28,7 @@ header {
     }
     .socials {
         position: absolute;
-        right: 30px;
+        right: 40px;
         top: 25%;
         text-align: center;
         display: flex;
@@ -189,7 +189,13 @@ nav {
 
 @media (max-width: 380px) {
     .headerNav a {
-        margin-left: 12px;
+        margin-left: 23px;
+    }
+}
+
+@media (max-width: 360px) {
+    .headerNav a {
+        margin-left: 14px;
     }
 }
 
