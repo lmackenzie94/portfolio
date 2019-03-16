@@ -11,7 +11,7 @@ $(function () {
     });
 
     $('a').smoothScroll({
-        speed: 600
+        speed: 1000
     });
 
 });

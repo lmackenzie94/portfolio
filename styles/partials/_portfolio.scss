@@ -20,7 +20,7 @@ main {
     }
     h3 {
         margin: 0;
-        padding: 5px 10px;
+        padding: 8px 10px 5px 10px;
         border: 3px solid $baseColour;
         background: $secondaryColour2;
         color: $secondaryColour1;
@@ -53,20 +53,13 @@ main {
     position: relative;
     width: 100%;
     padding: 1%;
-}
-
-.portfolioImage.darkBorder {
-    border: 5px solid $accentColour; 
-}
-
-.portfolioImage.lightBorder {
-    border: 5px solid $accentColour;// changes
+    border: 5px solid $accentColour;
 }
 
 .portfolioDescription {
     background: $secondaryColour1;
     width: 100%;
-    border: 5px solid $accentColour;//changed 
+    border: 5px solid $accentColour;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -83,22 +76,6 @@ main {
         margin-top: 5%;
     }
 }
-
-// .descriptionOne::after {
-//     @include circle('01');
-//     left: 50%;
-//     transform: translateX(-50%);
-// }
-
-// .descriptionTwo::after {
-//    @include circle('02');
-//    left: -20px;
-// }
-
-// .descriptionThree::after {
-//     @include circle('03');
-//     left: -20px;
-// }
 
 .portfolioIcons {
     display: flex;
@@ -144,32 +121,10 @@ main {
 
     .portfolioItem {
         width: 90%;
-        margin: 5% 0;
-    }
-
-    .descriptionOne::after,
-    .descriptionTwo::after,
-    .descriptionThree::after {
-        left: 42%;
+        margin: 5px 0;
     }
 
     .flexOrder {
         order: -1;
-    }
-}
-
-@media (max-width: 600px) {
-    .descriptionOne::after,
-    .descriptionTwo::after,
-    .descriptionThree::after {
-        left: 38%;
-    }
-}
-
-@media (max-width: 500px) {
-    .descriptionOne::after,
-    .descriptionTwo::after,
-    .descriptionThree::after {
-        left: 40%;
     }
 }
