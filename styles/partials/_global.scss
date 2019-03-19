@@ -11,31 +11,6 @@ $secondaryColour1: #f2f8ee;
 $secondaryColour2: #e63947;
 $accentColour: #abdadc;
 
-// MIXINS
-
-@mixin circle($content) {
-    content: $content;
-    position: absolute;
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    top: -50px;
-    background: #abdadc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    @media (max-width: 650px) {
-        height: 80px;
-        width: 80px;
-    }
-    @media (max-width: 500px) {
-        height: 60px;
-        width: 60px;
-        top: -30px;
-    }
-}
-
 // GLOBAL STYLES
 
 html {
@@ -143,21 +118,22 @@ p {
     color: $secondaryColour1;
 }
 
-.button:hover:before {
+.button:hover:before,
+.button:focus:before {
     transform: scaleY(1);
 }
 
 .socials a {
     display: inline-block;
     margin: 50% 0;
+    transition: all .3s ease;
+    &:hover,
+    &:focus {
+        color: $accentColour;
+        transform: scale(1.2);
+    }
     i {
         font-size: 1.2rem;
-        transition: all .3s ease;
-        &:hover,
-        &:active {
-            transform: scale(1.2);
-            color: $accentColour;
-        }
     }
 }
 

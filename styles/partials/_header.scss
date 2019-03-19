@@ -43,11 +43,6 @@ header {
     position: relative;
     width: 60%;
     padding: 1%;
-    // &:after {
-    //     @include circle("");
-    //     left: -32px;
-    //     top: -40px;
-    // }
 }
 
 .landingTextBox {
@@ -87,11 +82,15 @@ nav {
     position: relative;
     top: -100px;
     transition: all .3s ease-out;
+    &:focus-within {
+        top: 0px;
+    }
     a {
         display: inline-block;
         margin-left: 40px;
         padding: 5px 0;
-        &:hover {
+        &:hover,
+        &:focus {
             color: $accentColour;
         }
     }

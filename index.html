@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Luke MacKenzie | Web Developer</title>
+    <link type="image/png" href="assets/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -14,12 +15,12 @@
     <header>
         <section class="landing wrapper">
             <nav>
-                <div class="hamburger animated bounceInLeft delay-1s">
+                <div class="hamburger animated bounceInLeft delay-1s" tabindex="0">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <ul class="headerNav">
+                <ul class="headerNav" tabindex="0">
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -47,124 +48,123 @@
     </header>
     <article class="aboutArticle" id="about">
         <section class="about wrapper">
-            <h2 class="wow bounceInRight">About Me</h2>
+            <h2>About Me</h2>
             <div class="aboutContent">
-                <div class="aboutImage wow slideInLeft">
-                    <img src="assets/aboutMe1.jpg" class="aboutImage1" alt="" />
-                    <img src="assets/aboutMe2.jpg" class="aboutImage2" alt="" />
+                <div class="aboutImage">
+                    <img src="assets/aboutMe1.jpg" class="aboutImage1" alt="upper body shot of myself, Luke MacKenzie." />
+                    <img src="assets/aboutMe2.jpg" class="aboutImage2" alt="head shot of myself, Luke MacKenzie." />
                 </div>  
-                <div class="aboutText wow slideInRight">
+                <div class="aboutText">
                     <p>Simply put, I am a hard-working young man with big dreams trying to make my mother proud.</p>
                     
-                    <p>Upon completing my BBA degree at Laurier in 2016, I landed a great job at Chubb Insurance as a Business Analyst. For
-                    two years, I worked with an incredible group of people doing interesting and challenging work. Somewhere along the way
-                    I decided to teach myself HTML out of interest and before I knew it I was taking part-time web development courses and
-                    found myself considering a complete career change.</p>
+                    <p>Upon completing my BBA degree at Laurier in 2016, I landed a great job at Chubb Insurance where I enjoyed two years as a Business Analyst. Somewhere along the way I decided to teach myself HTML out of interest and before I knew it I was taking part-time web development courses and found myself considering a complete career change.</p>
         
-                    <p>On January 4th, 2019 I quit my job.</p>
+                    <p>On January 4th, 2019 I quit my job and have since completed HackerYou's nine-week Web Development Bootcamp. In a matter of months, I've become passionate about web development and I can't wait to begin doing it for a living.</p>
                     
-                    <p>I've since completed HackerYou's nine-week Web Development Bootcamp and I'm incredibly excited to be on the hunt for my first developer job.</p>
-                    
-                    <p>During my free time, you'll find me with a golf club in my hand or a 6-string around my neck.</p>
+                    <p>When I'm not coding, you can find me on a golf course, playing guitar, cooking, or rewatching Friends for the 27th time.</p>
+
+                    <!-- if you asked me a year ago what i'd be doing now, applying for developer jobs wouldn't have -->
                 </div>
             </div>
-            <a href="#portfolio" class="button">See what I've made</a>
+            <a href="#portfolio" class="button">Check out my work</a>
         </section>
     </article>
     <main id="portfolio">
         <section class="portfolio wrapper">
-            <h2 class="wow bounceInRight">Port<span class="whiteText">folio</span></h2>
+            <h2>Port<span class="whiteText">folio</span></h2>
             <h3>Recordit</h3>
             <div class="portfolioContainer">
-                <div class="portfolioItem wow slideInLeft">
+                <div class="portfolioItem">
                     <div class="portfolioImage">
-                        <img src="assets/recordit.jpg" alt="">
+                        <img src="assets/recordit.jpg" alt="screenshot of Recordit website.">
                     </div>
                 </div>
-                <div class="portfolioItem wow slideInRight">
+                <div class="portfolioItem">
                     <div class="portfolioDescription">
-                        <p>An fun app to discover new music based on artists you already love </p>
+                        <p>A fun app to discover new music based on artists you already love </p>
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
+                            <i class="fab fa-sass" title="SCSS"></i>
                             <i class="fab fa-js" title="JavaScript/jQuery"></i>
                             <i class="fab fa-github" title="GitHub"></i>
                         </div>
                         <div class="portfolioButtons">
-                            <a href="#" class="button">View Repo</a>
-                            <a href="#" class="button">View Live</a>
+                            <a href="https://github.com/alannaoconnorlukemackenzie/recordit" class="button" target="_blank">View Repo</a>
+                            <a href="http://lukemackenzie.ca/recordit/" class="button" target="_blank">View Live</a>
                         </div>
                     </div>
                 </div>
             </div>
             <h3>Ethical Makeup</h3>
             <div class="portfolioContainer">
-                <div class="portfolioItem wow slideInLeft">
+                <div class="portfolioItem">
                     <div class="portfolioDescription">
                         <p>A handy app for discovering and reviewing high-quality, vegan makeup</p>
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
+                            <i class="fab fa-sass" title="SCSS"></i>
                             <i class="fab fa-js" title="JavaScript/jQuery"></i>
                             <i class="fab fa-react" title="React"></i>
-                            <i class="fab fa-sass" title="SCSS"></i>
                             <i class="fab fa-github" title="GitHub"></i>
                         </div>
                         <div class="portfolioButtons">
-                            <a href="#" class="button">View Repo</a>
-                            <a href="#" class="button">View Live</a>
+                            <a href="https://github.com/ethicalmakeup/ethicalMakeup" class="button" target="_blank">View Repo</a>
+                            <a href="http://lukemackenzie.ca/ethicalmakeup/" class="button" target="_blank">View Live</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolioItem wow slideInRight flexOrder">
+                <div class="portfolioItem flexOrder">
                     <div class="portfolioImage">
-                        <img src="assets/ethicalMakeup.jpg" alt="">
+                        <img src="assets/ethicalMakeup.jpg" alt="screenshot of Ethical Makeup website.">
                     </div>
                 </div>
             </div>
             <h3>Tune Up</h3>
             <div class="portfolioContainer">
-                <div class="portfolioItem wow slideInLeft">
+                <div class="portfolioItem">
                     <div class="portfolioImage">
-                        <img src="assets/tuneup.jpg" alt="">
+                        <img src="assets/tuneup.jpg" alt="screenshot of Tune Up website.">
                     </div>
                 </div>
-                <div class="portfolioItem wow slideInRight">
+                <div class="portfolioItem">
                     <div class="portfolioDescription">
                         <p>Spend less time tuning & more time playing. Get your guitar sounding great in just a few clicks</p>
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
-                            <i class="fab fa-js" title="JavaScript/jQuery"></i>
                             <i class="fab fa-sass" title="SCSS"></i>
+                            <i class="fab fa-js" title="JavaScript/jQuery"></i>
                             <i class="fab fa-github" title="GitHub"></i>
                         </div>
                         <div class="portfolioButtons">
-                            <a href="#" class="button">View Repo</a>
-                            <a href="#" class="button">View Live</a>
+                            <a href="https://github.com/lmackenzie94/tune-up" class="button" target="_blank">View Repo</a>
+                            <a href="http://lukemackenzie.ca/tuneup/" class="button" target="_blank">View Live</a>
                         </div>
                     </div>
                 </div>
             </div>
             <h3>Beachstays</h3>
             <div class="portfolioContainer">
-                <div class="portfolioItem wow slideInLeft">
+                <div class="portfolioItem">
                     <div class="portfolioDescription">
                         <p>A multi-page informational website for Beachstays Resort</p>
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
+                            <i class="fab fa-sass" title="SCSS"></i>
                             <i class="fab fa-github" title="GitHub"></i>
                         </div>
                         <div class="portfolioButtons">
-                            <a href="#" class="button">View Repo</a>
-                            <a href="#" class="button">View Live</a>
+                            <a href="https://github.com/lmackenzie94/beachstays" class="button" target="_blank">View Repo</a>
+                            <a href="http://lukemackenzie.ca/beachstays/" class="button" target="_blank">View Live</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolioItem wow slideInRight flexOrder">
+                <div class="portfolioItem flexOrder">
                     <div class="portfolioImage">
-                        <img src="assets/beachstays.jpg" alt="">
+                        <img src="assets/beachstays.jpg" alt="screenshot of Beachstays website.">
                     </div>
                 </div>
             </div>
@@ -172,7 +172,7 @@
     </main>
     <article class="contactArticle" id="contact">
         <section class="contact wrapper">
-            <h2 class="wow bounceInRight"><span class="whiteText">Con</span>tact</h2>
+            <h2><span class="whiteText">Con</span>tact</h2>
             <form method="POST" action="http://www.focuspocus.io/magic/59cdba1eaf314d39b71e2e3c6a62a5c6">
                 <label for="" id="name">Name</label>
                 <input type="text" id="name" name="name">
@@ -180,7 +180,7 @@
                 <input type="email" id="email" name="email">
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Send">
             </form>
             <div class="socials">
                 <a href="https://github.com/lmackenzie94" target="_blank"><i class="fab fa-github"></i></a>
@@ -193,13 +193,12 @@
         </section>
     </article>
     <footer>
-        <p class="wrapper">Luke MacKenzie <i class="fab fa-canadian-maple-leaf"></i> 2019</p>
+        <p class="wrapper">Built & designed by Luke MacKenzie <i class="fab fa-canadian-maple-leaf"></i> 2019</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

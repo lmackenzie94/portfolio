@@ -1,0 +1,67 @@
+.border {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, $secondaryColour2 0%, $secondaryColour2 50%, $secondaryColour1 50%, $secondaryColour1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankyou {
+    border: 7px solid $baseColour;
+    width: 95vw;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1rem;
+    h2 {
+        margin: 0 0 1.4rem .7rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 $accentColour;
+    }
+    .socials {
+        position: absolute;
+        right: 40px;
+        top: 25%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.thankyouTextBorder {
+    border: 5px solid $baseColour;
+    background: transparent;
+    margin-top: 10px;
+    position: relative;
+    width: 60%;
+    padding: 1%;
+}
+
+.thankyouTextBox {
+    background: $secondaryColour1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    padding: 10% 5%;
+    border: 5px solid $accentColour;
+    text-align: center;
+    p {
+        margin: 7px 0;
+    }
+    a {
+        margin: 25px 0 10px 0;
+    }
+}
+
+// THANK YOU MEDIA QUERIES
+
+@media (max-width: 600px) {
+    .thankyouTextBorder {
+        width: 95%;
+    }
+}
