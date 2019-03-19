@@ -1,6 +1,6 @@
 $(function () {
 
-    $('.landingTextBox .button').delay(8500).show(0); 
+    $('.landingTextBox .button').delay(8500).show(0);
 
     $('.hamburger').on('click', function () {
         $('.hamburger').toggleClass('active'),
@@ -16,7 +16,7 @@ $(function () {
 
 });
 
-// typed.js
+// typed.js for the landing page
 var typed = new Typed('#p1', {
     strings: [
         "Hey, I'm Luke"
@@ -38,10 +38,6 @@ var typed = new Typed('#p3', {
     typeSpeed: 40,
     startDelay: 7000
 });
-
-// wow.js
-
-new WOW().init();
 
 
 

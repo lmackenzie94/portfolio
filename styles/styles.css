@@ -657,7 +657,7 @@ nav {
 }
 
 .aboutText p {
-  margin-bottom: 10px;
+  margin-bottom: 3%;
   padding-left: 5%;
   font-size: .9rem;
 }
@@ -684,6 +684,12 @@ nav {
   }
   .aboutImage2 {
     display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutText p {
+    font-size: .8rem;
   }
 }
 
@@ -795,7 +801,7 @@ main {
 }
 
 .portfolioDescription p {
-  margin: 5% 0;
+  margin-bottom: 5%;
   text-align: center;
 }
 

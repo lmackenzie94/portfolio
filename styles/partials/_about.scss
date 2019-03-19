@@ -30,7 +30,7 @@
 
 .about {
     min-height: 65vh;
-    border: 7px solid #abdadc;
+    border: 7px solid $accentColour;
     width: 95vw;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@
 }
 
 .aboutText p {
-    margin-bottom: 10px;
+    margin-bottom: 3%;
     padding-left: 5%;
     font-size: .9rem;
 }
@@ -91,5 +91,11 @@
 
     .aboutImage2 {
         display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutText p {
+        font-size: .8rem;
     }
 }
