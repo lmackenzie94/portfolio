@@ -1,6 +1,6 @@
 $(function () {
 
-    $('.landingTextBox .button').delay(6000).show(0);
+    $('.landingTextBox .button').delay(4500).show(0);
 
     $('.hamburger').on('click', function () {
         $('.hamburger').toggleClass('active'),
@@ -21,22 +21,22 @@ var typed = new Typed('#p1', {
     strings: [
         "Hey, I'm Luke"
     ],
-    typeSpeed: 30,
+    typeSpeed: 25,
     startDelay: 1000
 });
 var typed = new Typed('#p2', {
     strings: [
         "I'm a Toronto-based Web Developer"
     ],
-    typeSpeed: 30,
-    startDelay: 2500
+    typeSpeed: 25,
+    startDelay: 2000
 });
 var typed = new Typed('#p3', {
     strings: [
         "Thanks for stopping by!"
     ],
-    typeSpeed: 30,
-    startDelay: 5000
+    typeSpeed: 25,
+    startDelay: 3500
 });
 
 
