@@ -56,6 +56,7 @@
             display: inline-block;
             text-decoration: none;
             font-size: .8rem;
+            font-weight: bold;
             border: 2px solid $baseColour;
             padding: 8px 2px;
             margin: 5px 5px 20px 5px;
@@ -80,7 +81,6 @@
         }
 
         textarea {
-            resize: none;
             width: 75%;
             height: 150px;
             max-width: 450px;

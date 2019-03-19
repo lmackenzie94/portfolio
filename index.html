@@ -9,9 +9,11 @@
     <link type="image/png" href="assets/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <a href="#portfolio" class="skipLink">Skip to main content</a>
     <!-- HEADER start -->
     <header>
         <section class="landing wrapper">
@@ -29,7 +31,7 @@
             </nav>
             <h1 class="animated bounceInLeft delay-1s"><span class="whiteText">Lu</span>ke</h1>
             <h2 class="animated bounceInRight delay-1s">Mackenzie</h2>
-            <div class="landingTextBorder animated rotateInUpLeft delay-2s">
+            <div class="landingTextBorder">
                 <div class="landingTextBox">
                     <p id="p1"></p>
                     <p id="p2"></p>
@@ -38,12 +40,12 @@
                 </div>
             </div>
             <div class="socials animated bounceInDown delay-1s">
-                <a href="https://github.com/lmackenzie94" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mackenzieluke/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/L_MacKenzie94" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/lukemackenzie94/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://codepen.io/lmackenzie94/#" target="_blank"><i class="fab fa-codepen"></i></a>
-                <a href="mailto: mackenzieluke94@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/lmackenzie94" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mackenzieluke/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/L_MacKenzie94" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/lukemackenzie94/?hl=en" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://codepen.io/lmackenzie94/#" target="_blank" title="CodePen"><i class="fab fa-codepen"></i></a>
+                <a href="mailto: mackenzieluke94@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </section>
     </header>
@@ -86,9 +88,9 @@
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
-                            <i class="fab fa-sass" title="SCSS"></i>
-                            <i class="fab fa-js" title="JavaScript/jQuery"></i>
-                            <i class="fab fa-github" title="GitHub"></i>
+                            <i class="fab fa-sass" title="Sass"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="devicon-jquery-plain" title="jQuery"></i>
                         </div>
                         <div class="portfolioButtons">
                             <a href="https://github.com/alannaoconnorlukemackenzie/recordit" class="button" target="_blank">View Repo</a>
@@ -105,10 +107,9 @@
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
-                            <i class="fab fa-sass" title="SCSS"></i>
-                            <i class="fab fa-js" title="JavaScript/jQuery"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
                             <i class="fab fa-react" title="React"></i>
-                            <i class="fab fa-github" title="GitHub"></i>
+                            <img src="assets/firebase.svg" alt="Firebase icon." class="firebase" title="Firebase">
                         </div>
                         <div class="portfolioButtons">
                             <a href="https://github.com/ethicalmakeup/ethicalMakeup" class="button" target="_blank">View Repo</a>
@@ -135,9 +136,8 @@
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
-                            <i class="fab fa-sass" title="SCSS"></i>
-                            <i class="fab fa-js" title="JavaScript/jQuery"></i>
-                            <i class="fab fa-github" title="GitHub"></i>
+                            <i class="fab fa-sass" title="Sass"></i>
+                            <i class="devicon-jquery-plain" title="jQuery"></i>
                         </div>
                         <div class="portfolioButtons">
                             <a href="https://github.com/lmackenzie94/tune-up" class="button" target="_blank">View Repo</a>
@@ -154,8 +154,8 @@
                         <div class="portfolioIcons">
                             <i class="fab fa-html5" title="HTML"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
-                            <i class="fab fa-sass" title="SCSS"></i>
-                            <i class="fab fa-github" title="GitHub"></i>
+                            <i class="fab fa-sass" title="Sass"></i>
+                            <i class="devicon-jquery-plain" title="jQuery"></i>
                         </div>
                         <div class="portfolioButtons">
                             <a href="https://github.com/lmackenzie94/beachstays" class="button" target="_blank">View Repo</a>
@@ -178,20 +178,20 @@
             <h2><span class="whiteText">Con</span>tact</h2>
             <form method="POST" action="http://www.focuspocus.io/magic/59cdba1eaf314d39b71e2e3c6a62a5c6">
                 <label for="" id="name">Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" required></textarea>
                 <input type="submit" value="Send">
             </form>
             <div class="socials">
-                <a href="https://github.com/lmackenzie94" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mackenzieluke/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/L_MacKenzie94" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/lukemackenzie94/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://codepen.io/lmackenzie94/#" target="_blank"><i class="fab fa-codepen"></i></a>
-                <a href="mailto: mackenzieluke94@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/lmackenzie94" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mackenzieluke/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/L_MacKenzie94" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/lukemackenzie94/?hl=en" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://codepen.io/lmackenzie94/#" target="_blank" title="CodePen"><i class="fab fa-codepen"></i></a>
+                <a href="mailto: mackenzieluke94@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </section>
     </article>
