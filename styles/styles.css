@@ -894,6 +894,15 @@ main {
   }
 }
 
+@media (max-width: 500px) {
+  .portfolioIcons i {
+    margin: 5px 8px;
+  }
+  .portfolioIcons .firebase {
+    margin: 5px 3px;
+  }
+}
+
 .contactArticle {
   display: -webkit-box;
   display: -ms-flexbox;
