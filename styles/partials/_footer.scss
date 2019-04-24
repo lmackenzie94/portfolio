@@ -1,14 +1,22 @@
 footer {
-    background: $baseColour;
-    text-align: center;
-    padding: 5px 0;
-    p {
-        color: lightgrey;
-        line-height: normal;
-        font-size: .6rem;
-    }
-    i {
-        margin: 10px 3px;
-        color: $secondaryColour2;
-    }
+  background: $baseColour;
+  text-align: center;
+  padding: 5px 0;
+  p {
+    color: lightgrey;
+    line-height: normal;
+    font-size: 0.6rem;
+  }
+  a {
+    background: lightgrey;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 10px 0;
+    border: 3px solid $accentColour;
+  }
+  i {
+    margin: 10px 3px;
+    color: $secondaryColour2;
+  }
 }
