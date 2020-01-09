@@ -416,17 +416,25 @@
     <article class="contactArticle" id="contact">
       <section class="contact wrapper">
         <h2><span class="whiteText">Con</span>tact</h2>
-        <form
-          method="POST"
-          action="http://www.focuspocus.io/magic/59cdba1eaf314d39b71e2e3c6a62a5c6"
-        >
+        <form action="POST" data-netlify="true">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
-          <input type="submit" value="Send" />
+          <div data-netlify-recaptcha="true"></div>
+          <!-- honeypot -->
+          <!-- <input
+            id="contact_me_by_fax_only"
+            type="checkbox"
+            name="contact_me_by_fax_only"
+            value="1"
+            style="display:none !important"
+            tabindex="-1"
+            autocomplete="off"
+          /> -->
+          <input id="submit" type="submit" value="Send" />
         </form>
         <div class="socials">
           <a

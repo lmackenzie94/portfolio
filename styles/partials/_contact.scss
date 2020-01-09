@@ -1,133 +1,139 @@
 .contactArticle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to right, $secondaryColour2 0%, $secondaryColour2 50%, $secondaryColour1 50%, $secondaryColour1 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    $secondaryColour2 0%,
+    $secondaryColour2 50%,
+    $secondaryColour1 50%,
+    $secondaryColour1 100%
+  );
 }
 
 .contact {
-    min-height: 75vh;
-    border: 7px solid $baseColour;
-    width: 95vw;
+  min-height: 75vh;
+  border: 7px solid $baseColour;
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 35px 0;
+  position: relative;
+  h2 {
+    margin: 1.5rem 0 0 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 $accentColour;
+  }
+  form {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin: 35px 0;
-    position: relative;
-    h2 {
-        margin: 1.5rem 0 0 1.5rem;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 0 $accentColour;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8rem;
+    label {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      width: 75%;
+      max-width: 350px;
+      min-width: 200px;
+      color: $secondaryColour1;
+      &:nth-of-type(3) {
+        width: 75%;
+        max-width: 450px;
+        min-width: 250px;
+      }
     }
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        font-size: 0.8rem;
-        label {
-            margin-top: 20px;
-            margin-bottom: 5px; 
-            width: 75%;
-            max-width: 350px;
-            min-width: 200px;
-            color: $secondaryColour1;
-            &:nth-of-type(3) {
-                width: 75%;
-                max-width: 450px;
-                min-width: 250px;
-            }       
-        }
-        input:not([type='submit']) {
-            width: 75%;
-            max-width: 350px;
-            min-width: 200px;
-            padding: 5px;
-            border: none;
-            border-bottom: 3px solid $baseColour;
-            background: rgba(255,255,255,0.5);
-            color: $baseColour;
-            &:focus {
-                background: $accentColour;
-            }
-        }
-
-        input[type='submit'] {
-            display: inline-block;
-            text-decoration: none;
-            font-size: .8rem;
-            font-weight: bold;
-            border: 2px solid $baseColour;
-            padding: 8px 2px;
-            margin: 5px 5px 20px 5px;
-            position: relative;
-            color: $baseColour;
-            text-align: center;
-            z-index: 0;
-            width: 180px;
-            transition: all .2s ease-out;
-            text-transform: uppercase;
-            background: $secondaryColour1;
-        }
-
-        input[type='submit']:hover,
-        input[type='submit']:focus {
-            box-shadow: 3px 3px 0 $accentColour;
-        }
-
-        input[type='submit']:active {
-            box-shadow: none;
-            transform: scale(.95);
-        }
-
-        textarea {
-            width: 75%;
-            height: 150px;
-            max-width: 450px;
-            min-width: 250px;
-            padding: 15px;
-            border: 3px solid $baseColour;
-            background: rgba(255,255,255,0.6);
-            margin-bottom: 5px;
-            color: $baseColour;
-            &:focus {
-                background: $accentColour;
-            }
-        }
+    input:not([type="submit"]) {
+      width: 75%;
+      max-width: 350px;
+      min-width: 200px;
+      padding: 5px;
+      border: none;
+      border-bottom: 3px solid $baseColour;
+      background: rgba(255, 255, 255, 0.5);
+      color: $baseColour;
+      &:focus {
+        background: $accentColour;
+      }
     }
-    .socials {
-        position: absolute;
-        right: 40px;
-        top: 15%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+
+    input[type="submit"] {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: 2px solid $baseColour;
+      padding: 8px 2px;
+      margin: 5px 5px 20px 5px;
+      position: relative;
+      color: $baseColour;
+      text-align: center;
+      z-index: 0;
+      width: 180px;
+      transition: all 0.2s ease-out;
+      text-transform: uppercase;
+      background: $secondaryColour1;
     }
+
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+      box-shadow: 3px 3px 0 $accentColour;
+    }
+
+    input[type="submit"]:active {
+      box-shadow: none;
+      transform: scale(0.95);
+    }
+
+    textarea {
+      width: 75%;
+      height: 150px;
+      max-width: 450px;
+      min-width: 250px;
+      padding: 15px;
+      border: 3px solid $baseColour;
+      background: rgba(255, 255, 255, 0.6);
+      margin-bottom: 5px;
+      color: $baseColour;
+      &:focus {
+        background: $accentColour;
+      }
+    }
+  }
+  .socials {
+    position: absolute;
+    right: 40px;
+    top: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 // CONTACT MEDIA QUERIES
 
 @media (max-width: 790px) {
-    .contact .socials {
-        position: static;
-        flex-direction: row;
-        a {
-            margin: 30px 10px 20px 10px;
-        }
+  .contact .socials {
+    position: static;
+    flex-direction: row;
+    a {
+      margin: 30px 10px 20px 10px;
     }
+  }
 }
 
 @media (max-width: 440px) {
-    .contact form textarea,
-    .contact form input:not([type="submit"]),
-    .contact form input[type="submit"],
-    .contact form label, 
-    .contact form label:nth-of-type(3) {
-        width: 100%;
-        min-width: 100%;
-    }
-    
-    .contact h2 {
-        margin-left: 1.3rem;
-    }
+  .contact form textarea,
+  .contact form input:not([type="submit"]),
+  .contact form input[type="submit"],
+  .contact form label,
+  .contact form label:nth-of-type(3) {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .contact h2 {
+    margin-left: 1.3rem;
+  }
 }

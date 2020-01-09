@@ -973,7 +973,7 @@ main {
   min-width: 250px;
 }
 
-.contact form input:not([type='submit']) {
+.contact form input:not([type="submit"]) {
   width: 75%;
   max-width: 350px;
   min-width: 200px;
@@ -984,14 +984,14 @@ main {
   color: #1c3557;
 }
 
-.contact form input:not([type='submit']):focus {
+.contact form input:not([type="submit"]):focus {
   background: #abdadc;
 }
 
-.contact form input[type='submit'] {
+.contact form input[type="submit"] {
   display: inline-block;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
   border: 2px solid #1c3557;
   padding: 8px 2px;
@@ -1001,19 +1001,19 @@ main {
   text-align: center;
   z-index: 0;
   width: 180px;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   text-transform: uppercase;
   background: #f2f8ee;
 }
 
-.contact form input[type='submit']:hover,
-.contact form input[type='submit']:focus {
+.contact form input[type="submit"]:hover,
+.contact form input[type="submit"]:focus {
   -webkit-box-shadow: 3px 3px 0 #abdadc;
           box-shadow: 3px 3px 0 #abdadc;
 }
 
-.contact form input[type='submit']:active {
+.contact form input[type="submit"]:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transform: scale(0.95);
