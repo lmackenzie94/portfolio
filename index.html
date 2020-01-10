@@ -416,24 +416,17 @@
     <article class="contactArticle" id="contact">
       <section class="contact wrapper">
         <h2><span class="whiteText">Con</span>tact</h2>
-        <form method="POST" action="/thankyou.html" data-netlify="true">
+        <form method="POST" action="/thankyou.html" data-netlify="true" netlify-honeypot="bot-field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
-          <div data-netlify-recaptcha="true"></div>
-          <!-- honeypot -->
-          <!-- <input
-            id="contact_me_by_fax_only"
-            type="checkbox"
-            name="contact_me_by_fax_only"
-            value="1"
-            style="display:none !important"
-            tabindex="-1"
-            autocomplete="off"
-          /> -->
+          <!-- <div data-netlify-recaptcha="true"></div> -->
+          <p style="display: none;">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
           <input id="submit" type="submit" value="Send" />
         </form>
         <div class="socials">
