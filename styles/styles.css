@@ -349,7 +349,8 @@ header {
 .landing {
   border: 7px solid #1c3557;
   width: 95vw;
-  min-height: 90vh;
+  height: 90vh;
+  max-height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,6 +363,7 @@ header {
           flex-direction: column;
   position: relative;
   padding-top: 1rem;
+  overflow: hidden;
 }
 
 .landing h1 {
@@ -373,14 +375,23 @@ header {
 }
 
 .landing h2 {
-  margin: 0 0 1.3rem .7rem;
+  margin: 0 0 1.3rem 0.7rem;
   text-transform: uppercase;
+}
+
+.landing .test {
+  position: relative;
+  top: calc(50% - 75px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
 }
 
 .landing .socials {
   position: absolute;
   right: 40px;
-  top: 25%;
+  top: calc(50% - 154px);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,10 +405,10 @@ header {
 .landingTextBorder {
   border: 5px solid #1c3557;
   background: transparent;
-  margin-top: 10px;
   position: relative;
   width: 60%;
   padding: 1%;
+  margin: 10px auto 0px auto;
 }
 
 .landingTextBox {
@@ -452,8 +463,8 @@ nav {
           align-items: center;
   position: relative;
   top: -100px;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .headerNav:focus-within {
@@ -489,8 +500,8 @@ nav {
   height: 5px;
   width: 40px;
   position: relative;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .line2 {
@@ -612,7 +623,6 @@ nav {
 }
 
 .about {
-  min-height: 65vh;
   border: 7px solid #abdadc;
   width: 95vw;
   display: -webkit-box;
@@ -662,7 +672,7 @@ nav {
 .aboutText p {
   margin-bottom: 3%;
   padding-left: 5%;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 950px) {
@@ -691,8 +701,12 @@ nav {
 }
 
 @media (max-width: 600px) {
+  .aboutText {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   .aboutText p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -920,7 +934,6 @@ main {
 }
 
 .contact {
-  min-height: 75vh;
   border: 7px solid #1c3557;
   width: 95vw;
   display: -webkit-box;
@@ -935,6 +948,8 @@ main {
           flex-direction: column;
   margin: 35px 0;
   position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .contact h2 {
@@ -973,7 +988,7 @@ main {
   min-width: 250px;
 }
 
-.contact form input:not([type="submit"]) {
+.contact form input:not([type='submit']) {
   width: 75%;
   max-width: 350px;
   min-width: 200px;
@@ -984,11 +999,11 @@ main {
   color: #1c3557;
 }
 
-.contact form input:not([type="submit"]):focus {
+.contact form input:not([type='submit']):focus {
   background: #abdadc;
 }
 
-.contact form input[type="submit"] {
+.contact form input[type='submit'] {
   display: inline-block;
   text-decoration: none;
   font-size: 0.8rem;
@@ -1007,13 +1022,13 @@ main {
   background: #f2f8ee;
 }
 
-.contact form input[type="submit"]:hover,
-.contact form input[type="submit"]:focus {
+.contact form input[type='submit']:hover,
+.contact form input[type='submit']:focus {
   -webkit-box-shadow: 3px 3px 0 #abdadc;
           box-shadow: 3px 3px 0 #abdadc;
 }
 
-.contact form input[type="submit"]:active {
+.contact form input[type='submit']:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transform: scale(0.95);
@@ -1039,7 +1054,7 @@ main {
 .contact .socials {
   position: absolute;
   right: 40px;
-  top: 15%;
+  top: calc(50% - 154px);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1065,8 +1080,8 @@ main {
 
 @media (max-width: 440px) {
   .contact form textarea,
-  .contact form input:not([type="submit"]),
-  .contact form input[type="submit"],
+  .contact form input:not([type='submit']),
+  .contact form input[type='submit'],
   .contact form label,
   .contact form label:nth-of-type(3) {
     width: 100%;

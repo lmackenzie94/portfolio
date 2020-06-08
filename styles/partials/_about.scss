@@ -1,104 +1,106 @@
 .aboutArticle {
-    background: $secondaryColour1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  background: $secondaryColour1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .aboutArticle:after {
-    content: '';
-    width: 50%;
-    height: 50%;
-    background: $baseColour;
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    bottom: 0;
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: $baseColour;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .aboutArticle:before {
-    content: '';
-    width: 50%;
-    height: 50%;
-    background: $secondaryColour2;
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    top: 0;
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: $secondaryColour2;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .about {
-    min-height: 65vh;
-    border: 7px solid $accentColour;
-    width: 95vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 35px 0;
-    background: $secondaryColour1;
-    z-index: 1;
-    padding-top: 4%;
-    padding-bottom: 2%;
-    h2 {
-        text-transform: uppercase;
-        text-shadow: 2px 2px 0 $accentColour;
-        margin-bottom: 1rem;
-    }
-    a {
-        margin: 2%;
-    }
+  border: 7px solid $accentColour;
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 35px 0;
+  background: $secondaryColour1;
+  z-index: 1;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  h2 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 $accentColour;
+    margin-bottom: 1rem;
+  }
+  a {
+    margin: 2%;
+  }
 }
 
 .aboutContent {
-    display: flex;
+  display: flex;
 }
 
 .aboutImage1 {
-    border: 4px solid $baseColour;
-    padding: 2%;
+  border: 4px solid $baseColour;
+  padding: 2%;
 }
 
 .aboutImage2 {
-    border: 4px solid $baseColour;
-    display: none;
-    padding: 2%;
+  border: 4px solid $baseColour;
+  display: none;
+  padding: 2%;
 }
 
 .aboutText p {
-    margin-bottom: 3%;
-    padding-left: 5%;
-    font-size: .9rem;
+  margin-bottom: 3%;
+  padding-left: 5%;
+  font-size: 0.9rem;
 }
 
 // ABOUT MEDIA QUERIES
 
 @media (max-width: 950px) {
-
-    .aboutContent {
-        flex-direction: column;
-        align-items: center;
-        p {
-            padding: 0 3%;
-        }
+  .aboutContent {
+    flex-direction: column;
+    align-items: center;
+    p {
+      padding: 0 3%;
     }
+  }
 
-    .aboutImage {
-        margin: 0 0 5% 0;
-        width: 220px;
-    }
+  .aboutImage {
+    margin: 0 0 5% 0;
+    width: 220px;
+  }
 
-    .aboutImage1 {
-        display: none;
-    }
+  .aboutImage1 {
+    display: none;
+  }
 
-    .aboutImage2 {
-        display: block;
-    }
+  .aboutImage2 {
+    display: block;
+  }
 }
 
 @media (max-width: 600px) {
-    .aboutText p {
-        font-size: .8rem;
+  .aboutText {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    p {
+      font-size: 0.8rem;
     }
+  }
 }

@@ -43,18 +43,21 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <h1 class="animated bounceInLeft delay-1s">
-          <span class="whiteText">Lu</span>ke
-        </h1>
-        <h2 class="animated bounceInRight delay-1s">Mackenzie</h2>
-        <div class="landingTextBorder">
-          <div class="landingTextBox">
-            <p id="p1"></p>
-            <p id="p2"></p>
-            <p id="p3"></p>
-            <a href="#about" class="button">Tell Me More</a>
+        <div class="test">
+          <h1 class="animated bounceInLeft delay-1s">
+            <span class="whiteText">Lu</span>ke
+          </h1>
+          <h2 class="animated bounceInRight delay-1s">Mackenzie</h2>
+          <div class="landingTextBorder">
+            <div class="landingTextBox">
+              <p id="p1"></p>
+              <p id="p2"></p>
+              <p id="p3"></p>
+              <a href="#about" class="button">Tell Me More</a>
+            </div>
           </div>
         </div>
+
         <div class="socials animated bounceInDown delay-1s">
           <a
             href="https://github.com/lmackenzie94"
@@ -213,7 +216,7 @@
                   >View Repo</a
                 >
                 <a
-                  href="http://lukemackenzie.ca/recordit/"
+                  href="https://recordit.lukemackenzie.ca/"
                   class="button"
                   target="_blank"
                   >View Live</a
@@ -254,7 +257,7 @@
                   >View Repo</a
                 >
                 <a
-                  href="http://lukemackenzie.ca/ethicalmakeup/"
+                  href="https://ethical-makeup.lukemackenzie.ca/"
                   class="button"
                   target="_blank"
                   >View Live</a
@@ -309,56 +312,12 @@
                   >View Repo</a
                 >
                 <a
-                  href="http://lukemackenzie.ca/thump-a-trump/"
+                  href="https://thump-a-trump.lukemackenzie.ca/"
                   class="button"
                   target="_blank"
                   >View Live</a
                 >
               </div>
-            </div>
-          </div>
-        </div>
-        <h3>Beachstays</h3>
-        <div class="portfolioContainer">
-          <div class="portfolioItem">
-            <div class="portfolioDescription">
-              <p>A multi-page informational website for Beachstays Resort</p>
-              <div class="portfolioIcons">
-                <i class="fab fa-html5" title="HTML" aria-hidden="true"></i>
-                <span class="sr-only">HTML icon.</span>
-                <i class="fab fa-css3-alt" title="CSS" aria-hidden="true"></i>
-                <span class="sr-only">CSS icon.</span>
-                <i class="fab fa-sass" title="Sass" aria-hidden="true"></i>
-                <span class="sr-only">Sass icon.</span>
-                <i
-                  class="devicon-jquery-plain"
-                  title="jQuery"
-                  aria-hidden="true"
-                ></i>
-                <span class="sr-only">jQuery icon.</span>
-              </div>
-              <div class="portfolioButtons">
-                <a
-                  href="https://github.com/lmackenzie94/beachstays"
-                  class="button"
-                  target="_blank"
-                  >View Repo</a
-                >
-                <a
-                  href="http://lukemackenzie.ca/beachstays/"
-                  class="button"
-                  target="_blank"
-                  >View Live</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="portfolioItem flexOrder">
-            <div class="portfolioImage">
-              <img
-                src="assets/beachstays.jpg"
-                alt="screenshot of Beachstays website."
-              />
             </div>
           </div>
         </div>
@@ -400,7 +359,7 @@
                   >View Repo</a
                 >
                 <a
-                  href="http://lukemackenzie.ca/tuneup/"
+                  href="https://tune-up.lukemackenzie.ca/"
                   class="button"
                   target="_blank"
                   >View Live</a
@@ -416,7 +375,12 @@
     <article class="contactArticle" id="contact">
       <section class="contact wrapper">
         <h2><span class="whiteText">Con</span>tact</h2>
-        <form method="POST" action="/thankyou.html" data-netlify="true" netlify-honeypot="bot-field">
+        <form
+          method="POST"
+          action="/thankyou.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email</label>
@@ -425,7 +389,9 @@
           <textarea id="message" name="message" required></textarea>
           <!-- <div data-netlify-recaptcha="true"></div> -->
           <p style="display: none;">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            <label
+              >Don’t fill this out if you're human: <input name="bot-field"
+            /></label>
           </p>
           <input id="submit" type="submit" value="Send" />
         </form>

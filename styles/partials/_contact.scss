@@ -12,7 +12,6 @@
 }
 
 .contact {
-  min-height: 75vh;
   border: 7px solid $baseColour;
   width: 95vw;
   display: flex;
@@ -20,6 +19,9 @@
   flex-direction: column;
   margin: 35px 0;
   position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
   h2 {
     margin: 1.5rem 0 0 1.5rem;
     text-transform: uppercase;
@@ -44,7 +46,7 @@
         min-width: 250px;
       }
     }
-    input:not([type="submit"]) {
+    input:not([type='submit']) {
       width: 75%;
       max-width: 350px;
       min-width: 200px;
@@ -58,7 +60,7 @@
       }
     }
 
-    input[type="submit"] {
+    input[type='submit'] {
       display: inline-block;
       text-decoration: none;
       font-size: 0.8rem;
@@ -76,12 +78,12 @@
       background: $secondaryColour1;
     }
 
-    input[type="submit"]:hover,
-    input[type="submit"]:focus {
+    input[type='submit']:hover,
+    input[type='submit']:focus {
       box-shadow: 3px 3px 0 $accentColour;
     }
 
-    input[type="submit"]:active {
+    input[type='submit']:active {
       box-shadow: none;
       transform: scale(0.95);
     }
@@ -104,7 +106,7 @@
   .socials {
     position: absolute;
     right: 40px;
-    top: 15%;
+    top: calc(50% - 154px);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -125,8 +127,8 @@
 
 @media (max-width: 440px) {
   .contact form textarea,
-  .contact form input:not([type="submit"]),
-  .contact form input[type="submit"],
+  .contact form input:not([type='submit']),
+  .contact form input[type='submit'],
   .contact form label,
   .contact form label:nth-of-type(3) {
     width: 100%;

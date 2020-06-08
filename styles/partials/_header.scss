@@ -1,103 +1,119 @@
 header {
-    min-height: 100vh;
-    background-image: linear-gradient(to right, $secondaryColour2 0%, $secondaryColour2 50%, $secondaryColour1 50%, $secondaryColour1 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    $secondaryColour2 0%,
+    $secondaryColour2 50%,
+    $secondaryColour1 50%,
+    $secondaryColour1 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing {
-    border: 7px solid $baseColour;
-    width: 95vw;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  border: 7px solid $baseColour;
+  width: 95vw;
+  height: 90vh;
+  max-height: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-top: 1rem;
+  overflow: hidden;
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 $accentColour;
+  }
+  h2 {
+    margin: 0 0 1.3rem 0.7rem;
+    text-transform: uppercase;
+  }
+  .test {
     position: relative;
-    padding-top: 1rem;
-    h1 {
-        font-size: 5rem;
-        letter-spacing: 1rem;
-        margin-left: 1rem;
-        text-transform: uppercase;
-        text-shadow: 4px 4px 0 $accentColour;
-    }
-    h2 {
-        margin: 0 0 1.3rem .7rem;
-        text-transform: uppercase;
-    }
-    .socials {
-        position: absolute;
-        right: 40px;
-        top: 25%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
+    top: calc(50% - 75px);
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  .socials {
+    position: absolute;
+    right: 40px;
+    top: calc(50% - 154px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .landingTextBorder {
-    border: 5px solid $baseColour;
-    background: transparent;
-    margin-top: 10px;
-    position: relative;
-    width: 60%;
-    padding: 1%;
+  border: 5px solid $baseColour;
+  background: transparent;
+  // margin-top: 10px;
+  position: relative;
+  width: 60%;
+  padding: 1%;
+  margin: 10px auto 0px auto;
 }
 
 .landingTextBox {
-    background: $secondaryColour1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100%;
-    width: 100%;
-    padding: 2% 5% 2% 5%;
-    border: 5px solid $accentColour;
-    text-align: center;
-    p {
-        margin: 7px 0;
-    }
-    a {
-        display: none;
-        margin: 10px 0;
-    }
+  background: $secondaryColour1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+  padding: 2% 5% 2% 5%;
+  border: 5px solid $accentColour;
+  text-align: center;
+  p {
+    margin: 7px 0;
+  }
+  a {
+    display: none;
+    margin: 10px 0;
+  }
 }
 
 // typed.js cursor - hide
 .typed-cursor {
-    display: none;
+  display: none;
 }
 
 nav {
-    width: 100%;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .headerNav {
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: -100px;
-    transition: all .3s ease-out;
-    &:focus-within {
-        top: 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -100px;
+  transition: all 0.3s ease-out;
+  &:focus-within {
+    top: 0px;
+  }
+  a {
+    display: inline-block;
+    margin-left: 40px;
+    padding: 5px 0;
+    &:hover,
+    &:focus {
+      color: $accentColour;
     }
-    a {
-        display: inline-block;
-        margin-left: 40px;
-        padding: 5px 0;
-        &:hover,
-        &:focus {
-            color: $accentColour;
-        }
-    }
+  }
 }
 
 .headerNav.active {
-    top: 0px;
+  top: 0px;
 }
 
 // HAMBURGER NAV STYLES
@@ -112,90 +128,87 @@ nav {
 .line1,
 .line2,
 .line3 {
-    background: $baseColour;
-    height: 5px;
-    width: 40px;
-    position: relative;
-    transition: all .5s ease;
-  }
+  background: $baseColour;
+  height: 5px;
+  width: 40px;
+  position: relative;
+  transition: all 0.5s ease;
+}
 
 .line2 {
-    margin: 7px 0;
+  margin: 7px 0;
 }
 
 /* ACTIVE */
 
- .line1.active {
-    background: $baseColour;
-    height: 5px;
-    width: 40px;
-    transform: rotate(45deg);
-    transform-origin: 10%;
-    top: 4%;
-  }
+.line1.active {
+  background: $baseColour;
+  height: 5px;
+  width: 40px;
+  transform: rotate(45deg);
+  transform-origin: 10%;
+  top: 4%;
+}
 
 .line2.active {
-    visibility: hidden;
-    transition: 0s;
-  }
+  visibility: hidden;
+  transition: 0s;
+}
 
 .line3.active {
-    background: $baseColour;
-    height: 5px;
-    width: 40px;
-    transform: rotate(-45deg);
-    transform-origin: 10%;
-  }
-
+  background: $baseColour;
+  height: 5px;
+  width: 40px;
+  transform: rotate(-45deg);
+  transform-origin: 10%;
+}
 
 // HEADER MEDIA QUERIES
 
 @media (max-width: 790px) {
-    .landing .socials {
-        flex-direction: row;
-        right: 45%;
-        top: 90%;
-        a {
-            margin: 2% 5%;
-        }
+  .landing .socials {
+    flex-direction: row;
+    right: 45%;
+    top: 90%;
+    a {
+      margin: 2% 5%;
     }
+  }
 
-    .landingTextBorder {
-        width: 90%;
-    }
+  .landingTextBorder {
+    width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
-    .landing h1 {
-        font-size: 4.7rem;
-    }
+  .landing h1 {
+    font-size: 4.7rem;
+  }
 }
 
 @media (max-width: 440px) {
-    .landing {
-        width: 95vw;
-    }
-    .landing h1 {
-        font-size: 3.7rem;
-    }
-    .landing .socials {
-        right: 42%;
-    }
-    .headerNav a {
-        margin-left: 30px;
-    }
+  .landing {
+    width: 95vw;
+  }
+  .landing h1 {
+    font-size: 3.7rem;
+  }
+  .landing .socials {
+    right: 42%;
+  }
+  .headerNav a {
+    margin-left: 30px;
+  }
 }
 
 @media (max-width: 380px) {
-    .headerNav a {
-        margin-left: 23px;
-    }
+  .headerNav a {
+    margin-left: 23px;
+  }
 }
 
 @media (max-width: 360px) {
-    .headerNav a {
-        margin-left: 14px;
-    }
+  .headerNav a {
+    margin-left: 14px;
+  }
 }
-
-
